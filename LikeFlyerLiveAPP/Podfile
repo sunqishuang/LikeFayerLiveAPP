@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'LikeFlyerLiveAPP' do
+
+pod ‘AFNetworking’
+pod ‘SDWebImage’
+pod ‘Masonry’
+pod ‘YYKit’
+
+
+
+
+
+
+end

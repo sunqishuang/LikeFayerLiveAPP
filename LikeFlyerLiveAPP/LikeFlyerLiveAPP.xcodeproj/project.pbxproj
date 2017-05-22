@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B7A26611ED2DAAA009C397C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A26601ED2DAAA009C397C /* AppDelegate.m */; };
 		9BA30FC21ED2C42D000A7B5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA30FC11ED2C42D000A7B5C /* main.m */; };
-		9BA30FC51ED2C42D000A7B5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA30FC41ED2C42D000A7B5C /* AppDelegate.m */; };
-		9BA30FC81ED2C42D000A7B5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA30FC71ED2C42D000A7B5C /* ViewController.m */; };
 		9BA30FCB1ED2C42D000A7B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA30FC91ED2C42D000A7B5C /* Main.storyboard */; };
 		9BA30FCD1ED2C42D000A7B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA30FCC1ED2C42D000A7B5C /* Assets.xcassets */; };
 		9BA30FD01ED2C42D000A7B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA30FCE1ED2C42D000A7B5C /* LaunchScreen.storyboard */; };
 		9BA30FDB1ED2C42D000A7B5C /* LikeFlyerLiveAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA30FDA1ED2C42D000A7B5C /* LikeFlyerLiveAPPTests.m */; };
 		9BA30FE61ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA30FE51ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests.m */; };
+		B8836EBB882D02FE6247B498 /* libPods-LikeFlyerLiveAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3867806EBB00C5B3F0A346E /* libPods-LikeFlyerLiveAPP.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0A3362CD31B5E098E2EEE0 /* Pods-LikeFlyerLiveAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikeFlyerLiveAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LikeFlyerLiveAPP/Pods-LikeFlyerLiveAPP.release.xcconfig"; sourceTree = "<group>"; };
+		6E661D4AB532C1A9B7433E45 /* Pods-LikeFlyerLiveAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikeFlyerLiveAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LikeFlyerLiveAPP/Pods-LikeFlyerLiveAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		9B56F7701ED2DFD000EB8586 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9B56F7711ED2E06500EB8586 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		9B7A265F1ED2DAAA009C397C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B7A26601ED2DAAA009C397C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9BA30FBD1ED2C42D000A7B5C /* LikeFlyerLiveAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikeFlyerLiveAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA30FC11ED2C42D000A7B5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9BA30FC31ED2C42D000A7B5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9BA30FC41ED2C42D000A7B5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9BA30FC61ED2C42D000A7B5C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9BA30FC71ED2C42D000A7B5C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9BA30FCA1ED2C42D000A7B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BA30FCC1ED2C42D000A7B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BA30FCF1ED2C42D000A7B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		9BA30FE11ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LikeFlyerLiveAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA30FE51ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LikeFlyerLiveAPPUITests.m; sourceTree = "<group>"; };
 		9BA30FE71ED2C42D000A7B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3867806EBB00C5B3F0A346E /* libPods-LikeFlyerLiveAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LikeFlyerLiveAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8836EBB882D02FE6247B498 /* libPods-LikeFlyerLiveAPP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +82,286 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BDC07EEF86E6FAF41C40981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3867806EBB00C5B3F0A346E /* libPods-LikeFlyerLiveAPP.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B7A263D1ED2DA63009C397C /* APPDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9B7A265F1ED2DAAA009C397C /* AppDelegate.h */,
+				9B7A26601ED2DAAA009C397C /* AppDelegate.m */,
+			);
+			path = APPDelegate;
+			sourceTree = "<group>";
+		};
+		9B7A263E1ED2DA63009C397C /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				9B7A263F1ED2DA63009C397C /* Base */,
+				9B7A26401ED2DA63009C397C /* Helper */,
+				9B7A26431ED2DA63009C397C /* Libs */,
+				9B7A26441ED2DA63009C397C /* Live */,
+				9B7A26491ED2DA63009C397C /* Me */,
+				9B7A26531ED2DA63009C397C /* Network */,
+				9B7A26541ED2DA63009C397C /* Others */,
+				9B7A26551ED2DA63009C397C /* Play */,
+				9B7A265A1ED2DA63009C397C /* Show */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		9B7A263F1ED2DA63009C397C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9B7A26401ED2DA63009C397C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9B7A26411ED2DA63009C397C /* Category */,
+				9B7A26421ED2DA63009C397C /* Tools */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9B7A26411ED2DA63009C397C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9B7A26421ED2DA63009C397C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		9B7A26431ED2DA63009C397C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		9B7A26441ED2DA63009C397C /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				9B7A26451ED2DA63009C397C /* Controllers */,
+				9B7A26461ED2DA63009C397C /* Handler */,
+				9B7A26471ED2DA63009C397C /* Models */,
+				9B7A26481ED2DA63009C397C /* Views */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		9B7A26451ED2DA63009C397C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9B7A26461ED2DA63009C397C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		9B7A26471ED2DA63009C397C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B7A26481ED2DA63009C397C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B7A26491ED2DA63009C397C /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				9B7A264A1ED2DA63009C397C /* Controllers */,
+				9B7A264B1ED2DA63009C397C /* Handler */,
+				9B7A264C1ED2DA63009C397C /* Models */,
+				9B7A264D1ED2DA63009C397C /* Show */,
+				9B7A26521ED2DA63009C397C /* Views */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		9B7A264A1ED2DA63009C397C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9B7A264B1ED2DA63009C397C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		9B7A264C1ED2DA63009C397C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B7A264D1ED2DA63009C397C /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				9B7A264E1ED2DA63009C397C /* Controllers */,
+				9B7A264F1ED2DA63009C397C /* Handler */,
+				9B7A26501ED2DA63009C397C /* Models */,
+				9B7A26511ED2DA63009C397C /* Views */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		9B7A264E1ED2DA63009C397C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9B7A264F1ED2DA63009C397C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		9B7A26501ED2DA63009C397C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B7A26511ED2DA63009C397C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B7A26521ED2DA63009C397C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B7A26531ED2DA63009C397C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9B7A26541ED2DA63009C397C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		9B7A26551ED2DA63009C397C /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				9B7A26561ED2DA63009C397C /* Controllers */,
+				9B7A26571ED2DA63009C397C /* Handler */,
+				9B7A26581ED2DA63009C397C /* Models */,
+				9B7A26591ED2DA63009C397C /* Views */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		9B7A26561ED2DA63009C397C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9B7A26571ED2DA63009C397C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		9B7A26581ED2DA63009C397C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B7A26591ED2DA63009C397C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B7A265A1ED2DA63009C397C /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				9B7A265B1ED2DA63009C397C /* Controllers */,
+				9B7A265C1ED2DA63009C397C /* Handler */,
+				9B7A265D1ED2DA63009C397C /* Models */,
+				9B7A265E1ED2DA63009C397C /* Views */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		9B7A265B1ED2DA63009C397C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9B7A265C1ED2DA63009C397C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		9B7A265D1ED2DA63009C397C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B7A265E1ED2DA63009C397C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9BA30FB41ED2C42D000A7B5C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +369,8 @@
 				9BA30FD91ED2C42D000A7B5C /* LikeFlyerLiveAPPTests */,
 				9BA30FE41ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests */,
 				9BA30FBE1ED2C42D000A7B5C /* Products */,
+				ACE99B614F51CC6F4B59CFB3 /* Pods */,
+				5BDC07EEF86E6FAF41C40981 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +387,8 @@
 		9BA30FBF1ED2C42D000A7B5C /* LikeFlyerLiveAPP */ = {
 			isa = PBXGroup;
 			children = (
-				9BA30FC31ED2C42D000A7B5C /* AppDelegate.h */,
-				9BA30FC41ED2C42D000A7B5C /* AppDelegate.m */,
-				9BA30FC61ED2C42D000A7B5C /* ViewController.h */,
-				9BA30FC71ED2C42D000A7B5C /* ViewController.m */,
-				9BA30FC91ED2C42D000A7B5C /* Main.storyboard */,
-				9BA30FCC1ED2C42D000A7B5C /* Assets.xcassets */,
-				9BA30FCE1ED2C42D000A7B5C /* LaunchScreen.storyboard */,
-				9BA30FD11ED2C42D000A7B5C /* Info.plist */,
+				9B7A263D1ED2DA63009C397C /* APPDelegate */,
+				9B7A263E1ED2DA63009C397C /* classes */,
 				9BA30FC01ED2C42D000A7B5C /* Supporting Files */,
 			);
 			path = LikeFlyerLiveAPP;
@@ -117,7 +397,13 @@
 		9BA30FC01ED2C42D000A7B5C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9BA30FC91ED2C42D000A7B5C /* Main.storyboard */,
+				9BA30FCC1ED2C42D000A7B5C /* Assets.xcassets */,
+				9BA30FCE1ED2C42D000A7B5C /* LaunchScreen.storyboard */,
+				9BA30FD11ED2C42D000A7B5C /* Info.plist */,
 				9BA30FC11ED2C42D000A7B5C /* main.m */,
+				9B56F7701ED2DFD000EB8586 /* PrefixHeader.pch */,
+				9B56F7711ED2E06500EB8586 /* Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +426,15 @@
 			path = LikeFlyerLiveAPPUITests;
 			sourceTree = "<group>";
 		};
+		ACE99B614F51CC6F4B59CFB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E661D4AB532C1A9B7433E45 /* Pods-LikeFlyerLiveAPP.debug.xcconfig */,
+				3F0A3362CD31B5E098E2EEE0 /* Pods-LikeFlyerLiveAPP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +442,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BA30FEA1ED2C42D000A7B5C /* Build configuration list for PBXNativeTarget "LikeFlyerLiveAPP" */;
 			buildPhases = (
+				CE2098A2DDDF0798F621AA4D /* [CP] Check Pods Manifest.lock */,
 				9BA30FB91ED2C42D000A7B5C /* Sources */,
 				9BA30FBA1ED2C42D000A7B5C /* Frameworks */,
 				9BA30FBB1ED2C42D000A7B5C /* Resources */,
+				DF9281A0FA6B18A000D3DF89 /* [CP] Embed Pods Frameworks */,
+				D55DE98E340F8C944A2240E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,13 +569,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CE2098A2DDDF0798F621AA4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D55DE98E340F8C944A2240E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LikeFlyerLiveAPP/Pods-LikeFlyerLiveAPP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF9281A0FA6B18A000D3DF89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LikeFlyerLiveAPP/Pods-LikeFlyerLiveAPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9BA30FB91ED2C42D000A7B5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BA30FC81ED2C42D000A7B5C /* ViewController.m in Sources */,
-				9BA30FC51ED2C42D000A7B5C /* AppDelegate.m in Sources */,
+				9B7A26611ED2DAAA009C397C /* AppDelegate.m in Sources */,
 				9BA30FC21ED2C42D000A7B5C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,24 +772,30 @@
 		};
 		9BA30FEB1ED2C42D000A7B5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E661D4AB532C1A9B7433E45 /* Pods-LikeFlyerLiveAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V2WV6W2CC3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LikeFlyerLiveAPP/PrefixHeader.pch";
 				INFOPLIST_FILE = LikeFlyerLiveAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---.LikeFlyerLiveAPP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunqishaung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		9BA30FEC1ED2C42D000A7B5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0A3362CD31B5E098E2EEE0 /* Pods-LikeFlyerLiveAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V2WV6W2CC3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LikeFlyerLiveAPP/PrefixHeader.pch";
 				INFOPLIST_FILE = LikeFlyerLiveAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---.LikeFlyerLiveAPP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunqishaung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -518,6 +869,7 @@
 				9BA30FEC1ED2C42D000A7B5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BA30FED1ED2C42D000A7B5C /* Build configuration list for PBXNativeTarget "LikeFlyerLiveAPPTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +878,7 @@
 				9BA30FEF1ED2C42D000A7B5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BA30FF01ED2C42D000A7B5C /* Build configuration list for PBXNativeTarget "LikeFlyerLiveAPPUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +887,7 @@
 				9BA30FF21ED2C42D000A7B5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
