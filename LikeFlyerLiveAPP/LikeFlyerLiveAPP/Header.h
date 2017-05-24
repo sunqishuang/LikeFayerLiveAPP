@@ -10,12 +10,16 @@
 #define Header_h
 
 
-#import "AFNetworking.h"
-#import "Masonry.h"
-#import "UIImageView+WebCache.h"
-#import "UIButton+WebCache.h"
+#import <VTMagic/VTMagic.h>
+#import <AFNetworking/AFNetworking.h>
+#import <Masonry/Masonry.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import <YYKit/YYKit.h>
 
-#import "YYKit.h"
+
+
+
 
 
 #endif /* Header_h */

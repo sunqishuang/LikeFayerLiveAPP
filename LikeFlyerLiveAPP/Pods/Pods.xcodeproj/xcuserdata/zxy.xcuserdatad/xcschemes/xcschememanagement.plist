@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>VTMagic.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>09519697E3034F93E7EA53C2BFD936B8</key>
+		<key>228DBE1294C70F94AC6E7ECF9E6F6043</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>10C53A311B07EAA2AA4049C671432FB5</key>
+		<key>73C349E4B057A56B131D44A87C40898B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9446E927109DF16FB81B6A5BB0B05F17</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9C5458ABD45F5579DF14378E9BF3616E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -48,11 +63,6 @@
 			<true/>
 		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FB3C11BC09680FCF6FE48430A53E591B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -18,6 +18,9 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - VTMagic (1.2.4):
+    - VTMagic/Core (= 1.2.4)
+  - VTMagic/Core (1.2.4)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -26,14 +29,16 @@ DEPENDENCIES:
   - AFNetworking
   - Masonry
   - SDWebImage
+  - VTMagic
   - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  VTMagic: b49e5f456dbcbfd9a3588ba92417233a105bc193
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 9aaf357cdc7b752f6f21499aff12593d0e2dd711
+PODFILE CHECKSUM: e1a28574f392b7f7ef71e5caf6a0e821dd3bcecd
 
 COCOAPODS: 1.1.1

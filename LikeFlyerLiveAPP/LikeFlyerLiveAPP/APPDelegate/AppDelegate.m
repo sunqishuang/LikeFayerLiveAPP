@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "SUN_TabbarController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    
+    SUN_TabbarController *mainTabbarVC = [[SUN_TabbarController alloc] init];
+    
+    self.window.rootViewController = mainTabbarVC;
+    
     
     return YES;
 }

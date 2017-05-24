@@ -7,7 +7,7 @@ pod ‘AFNetworking’
 pod ‘SDWebImage’
 pod ‘Masonry’
 pod ‘YYKit’
-
+pod 'VTMagic'
 
 
 
