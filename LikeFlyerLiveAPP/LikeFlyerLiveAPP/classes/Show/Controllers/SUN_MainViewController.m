@@ -12,10 +12,11 @@
 #import "SUN_PopularController.h"
 #import "SUN_NearbyController.h"
 
-@interface SUN_MainViewController ()<VTMagicViewDelegate,VTMagicViewDataSource>{
-    NSArray *_segmengTitleArray;
-}
-@property (nonatomic, strong) VTMagicController *magicController;
+@interface SUN_MainViewController ()<UIScrollViewDelegate>
+@property (nonatomic, strong) UIViewController *showingVC;
+@property (nonatomic, strong) UIScrollView *bgScrollView;
+
+@property (nonatomic, strong) BDSegmentView *segment;
 
 @property (nonatomic, strong) UIButton *leftItem;
 
@@ -30,164 +31,94 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [self setUPNavigitionBar];
     
-    [self setUpMagicController];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    [self addChildViewController:[SUN_AttentionController new]];
+    [self addChildViewController:[SUN_PopularController new]];
+    [self addChildViewController:[SUN_NearbyController new]];
+    
+    
+    [self createBgScrollView];
+
+    
+    
 
 
 }
 
 
-- (void)setUPNavigitionBar{
-    
-    
-    UIButton *leftItem = [UIButton buttonWithType:UIButtonTypeCustom];
-    leftItem.frame = CGRectMake(0, 0, K_Width/5.0, 44);
-    [leftItem setImage:[UIImage imageNamed:@"global_search"] forState:UIControlStateNormal];
-    [leftItem addTarget:self action:@selector(leftBarButtonItemClick) forControlEvents:UIControlEventTouchUpInside];
 
-    _leftItem = leftItem;
-    
-    
-    UIButton *rightItrm = [UIButton buttonWithType:UIButtonTypeCustom];
-    rightItrm.frame = CGRectMake(0, 0, K_Width/5.0, 44);
-    [rightItrm setImage:[UIImage imageNamed:@"title_button_more"] forState:UIControlStateNormal];
-    [rightItrm addTarget:self action:@selector(rightBarButtonItemClick) forControlEvents:UIControlEventTouchUpInside];
+#pragma mark  ---------------------------------------  创建子视图
+/**
+ *  创建顶部segment
+ */
+- (void)createSegment{
+    _segment = [BDSegmentView BDsegmentWithFrame:CGRectMake(0, 20, K_Width , 44) style:BDSegmentLineStyle];
+    _segment.allItemTitleS = [NSMutableArray arrayWithObjects:@"关注",@"热门",@"附近", nil];
+    _segment.titleFont = [UIFont systemFontOfSize:15];
+    _segment.BDitemColor = [UIColor whiteColor];
+    _segment.BDitemSelectedTextColor = [UIColor whiteColor];
+    _segment.BDitemSelectedStylrColor = [UIColor whiteColor];
+    _segment.isEqualToTextLength = YES;
+    //    这句代码决定了,_segment一定要在bgScroll之后创建
+    __weak UIScrollView *weakScroll = _bgScrollView;
 
-    _rightItem = rightItrm;
-}
+    // 点击对应的订单按钮btn进来跳转到对应页面
+ 
 
+    _segment.BDItemClickBlock = ^(NSString *itemName, NSInteger itemIndex){
+            [UIView animateWithDuration:0.25 animations:^{
+            weakScroll.contentOffset = CGPointMake(K_Width * itemIndex, 0);
 
-- (void)setUpMagicController{
-    _segmengTitleArray = @[@"关注",@"热门",@"附近"];
-    
-    [self addChildViewController:self.magicController];
-    [self.view addSubview:_magicController.view];
-    
-    [self.magicController didMoveToParentViewController:self];
-    [self.magicController.magicView reloadData];
+            }];
+        };
+  
+    self.navigationItem.titleView = _segment;
 
-}
-
-
-#pragma mark ---------------------------------------------- buttonClick
-
-- (void)leftBarButtonItemClick{
     
 }
 
-- (void)rightBarButtonItemClick{
+/**
+ *  创建背景scrollView
+ */
+- (void)createBgScrollView{
+    _bgScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, K_Width, K_Height  - 49 - 64)];
+    _bgScrollView.bounces = NO;
+    _bgScrollView.pagingEnabled = YES;
+    _bgScrollView.showsHorizontalScrollIndicator = NO;
+    _bgScrollView.contentSize = CGSizeMake(K_Width * 3, _bgScrollView.frame.size.height);
+    _bgScrollView.delegate = self;
+    [self.view addSubview:_bgScrollView];
     
-}
-
-
-
-
-
-- (VTMagicController *)magicController{
-    if (!_magicController) {
-        _magicController = [[VTMagicController alloc] init];
-        _magicController.magicView.frame = CGRectMake(0, 0, K_Width, K_Height);
-        _magicController.magicView.dataSource = self;
-        _magicController.magicView.delegate = self;
-        _magicController.magicView.scrollEnabled = YES;
+    for (int i = 0; i < 3; i ++) {
         
-        _magicController.magicView.sliderColor = [UIColor whiteColor];
-        _magicController.magicView.sliderHeight = 1.f;
-        _magicController.magicView.sliderWidth = 80;
-        _magicController.magicView.layoutStyle = VTLayoutStyleDivide;
-        _magicController.magicView.switchStyle = VTSwitchStyleDefault;
-        _magicController.magicView.navigationHeight = 44.f;
         
-        _magicController.magicView.leftNavigatoinItem = _leftItem;
-        _magicController.magicView.rightNavigatoinItem = _rightItem;
+        SUN_NearbyController *vc = self.childViewControllers[i];
+        
+        vc.viewFrame = CGRectMake(K_Width * i, 0 , K_Width, _bgScrollView.frame.size.height);
 
-        self.navigationItem.titleView = _magicController.magicView.navigationView;
+        [_bgScrollView addSubview:vc.view];
         
     }
-    return _magicController;
+    
+    [self createSegment];
+}
+
+#pragma mark --------------------------------- UIScrollViewDelegate
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    NSInteger index = scrollView.contentOffset.x/K_Width;
+    [_segment BDitemClickByIndex:index];
+    
+
+    
+    
+    
 }
 
 
 
-#pragma mark ------------------------------ VTMagicViewDelegate,VTMagicViewDataSource
-
-
-- (NSArray<__kindof NSString *> *)menuTitlesForMagicView:(VTMagicView *)magicView{
-    return _segmengTitleArray;
-}
-- (UIButton *)magicView:(VTMagicView *)magicView menuItemAtIndex:(NSUInteger)itemIndex{
-    static NSString *itemIdentifier = @"itemIdentifier";
-    UIButton *menuItem = [magicView dequeueReusableItemWithIdentifier:itemIdentifier];
-    if (!menuItem) {
-        menuItem = [UIButton buttonWithType:UIButtonTypeCustom];
-        [menuItem setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [menuItem setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-        menuItem.titleLabel.font = [UIFont systemFontOfSize:16];
-    }
-    return menuItem;
-}
-- (UIViewController *)magicView:(VTMagicView *)magicView viewControllerAtPage:(NSUInteger)pageIndex{
-    
-    switch (pageIndex) {
-        case 0:
-        {
-            static NSString *identify = @"SUN_AttentionController";
-            
-            SUN_AttentionController *VC = [magicView dequeueReusablePageWithIdentifier:identify];
-            if (!VC) {
-                VC = [[SUN_AttentionController alloc] init];
-            }
-            
-            return VC;
-        
-        }
-            break;
-        case 1:
-        {
-            static NSString *identify = @"SUN_PopularController";
-            
-            SUN_PopularController *VC = [magicView dequeueReusablePageWithIdentifier:identify];
-            if (!VC) {
-                VC = [[SUN_PopularController alloc] init];
-            }
-            
-            return VC;
-        }
-            break;
-        case 2:
-        {
-            static NSString *identify = @"SUN_NearbyController";
-            
-            SUN_NearbyController *VC = [magicView dequeueReusablePageWithIdentifier:identify];
-            if (!VC) {
-                VC = [[SUN_NearbyController alloc] init];
-            }
-            
-            return VC;
-        }
-            break;
-            
-        default:  return nil;
-            break;
-    }
-    
-    return nil;
-    
-}
-
-
-- (void)magicView:(VTMagicView *)magicView viewDidDisappeare:(UIViewController *)viewController
-           atPage:(NSUInteger)pageIndex{
-    
-    
-    
-}
-- (void)magicView:(VTMagicView *)magicView didSelectItemAtIndex:(NSUInteger)itemIndex{
-    
-    
-}
 
 
 

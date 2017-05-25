@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BlocksKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>43AF4B232950FEADD7C6847CD5B376E7</key>
+		<key>0AC55E754182E1FCF070AC7F74379523</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>46429F43F9C2B0F52B9CAB1C7F2D602A</key>
+		<key>66B727D5CE7CD5BA17AD7DDC345BF426</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6F7A2C2401E2C5D7FA63C1646086358A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70D7DDC063BED1927D284CDD3709A8E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BB4B8C780FE58301771C4EC696FC3C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C273F500A23E9FCDE2DC7B08A998AE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -68,21 +93,6 @@
 			<true/>
 		</dict>
 		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E354516E28162A6DAF9F10D8B27C21DE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F380A4CAAF989707E7189C61E3684E2E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F441A46D1FB8DADCBFC078F855586ABC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

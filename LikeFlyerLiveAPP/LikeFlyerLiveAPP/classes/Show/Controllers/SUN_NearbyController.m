@@ -10,6 +10,8 @@
 
 #import "SUN_NearbyCollectionItem.h"
 
+#import "SUNPlayerViewController.h"
+
 @interface SUN_NearbyController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -22,6 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.frame = _viewFrame;
 
     [self.view addSubview:self.collectionView];
 
@@ -65,6 +69,10 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    SUN_NearListModel *model = _dataArray[indexPath.row];
+    SUNPlayerViewController *vc = [SUNPlayerViewController new];
+    vc.liveModel = model.info;
+    [self.navigationController pushViewController:vc animated:YES];
     
     
 }
@@ -73,6 +81,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+//- (void)collectionview
 
 
 - (void)getDataWithNetwork{

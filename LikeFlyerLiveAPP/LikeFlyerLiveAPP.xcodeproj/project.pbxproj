@@ -22,6 +22,23 @@
 		9B38AEF11ED58082006B41A0 /* SUN_NearbyCollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AEEF1ED58082006B41A0 /* SUN_NearbyCollectionItem.m */; };
 		9B38AEF21ED58082006B41A0 /* SUN_NearbyCollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B38AEF01ED58082006B41A0 /* SUN_NearbyCollectionItem.xib */; };
 		9B38AEF51ED581DD006B41A0 /* SUN_NearListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AEF41ED581DD006B41A0 /* SUN_NearListModel.m */; };
+		9B38AEFE1ED6C5C1006B41A0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AEFD1ED6C5C1006B41A0 /* AudioToolbox.framework */; };
+		9B38AF001ED6C5C8006B41A0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AEFF1ED6C5C8006B41A0 /* AVFoundation.framework */; };
+		9B38AF021ED6C5CD006B41A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AF011ED6C5CD006B41A0 /* CoreGraphics.framework */; };
+		9B38AF041ED6C5D4006B41A0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AF031ED6C5D4006B41A0 /* CoreMedia.framework */; };
+		9B38AF061ED6C5DC006B41A0 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AF051ED6C5DC006B41A0 /* libbz2.tbd */; };
+		9B38AF081ED6C5E2006B41A0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AF071ED6C5E2006B41A0 /* libz.tbd */; };
+		9B38AF0A1ED6C5EC006B41A0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AF091ED6C5EC006B41A0 /* MediaPlayer.framework */; };
+		9B38AF0C1ED6C5F6006B41A0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AF0B1ED6C5F6006B41A0 /* MobileCoreServices.framework */; };
+		9B38AF0E1ED6C5FA006B41A0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AF0D1ED6C5FA006B41A0 /* OpenGLES.framework */; };
+		9B38AF101ED6C601006B41A0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AF0F1ED6C601006B41A0 /* QuartzCore.framework */; };
+		9B38AF121ED6C605006B41A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AF111ED6C605006B41A0 /* UIKit.framework */; };
+		9B38AF141ED6C60D006B41A0 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AF131ED6C60D006B41A0 /* VideoToolbox.framework */; };
+		9B38AF161ED6C64A006B41A0 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38AF151ED6C64A006B41A0 /* IJKMediaFramework.framework */; };
+		9B38AF191ED6C769006B41A0 /* SUNPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AF181ED6C769006B41A0 /* SUNPlayerViewController.m */; };
+		9B38AF1D1ED6D35E006B41A0 /* SUNPlayerChlidController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AF1B1ED6D35E006B41A0 /* SUNPlayerChlidController.m */; };
+		9B38AF1E1ED6D35E006B41A0 /* SUNPlayerChlidController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B38AF1C1ED6D35E006B41A0 /* SUNPlayerChlidController.xib */; };
+		9B38AF211ED6D8E6006B41A0 /* BDSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AF201ED6D8E6006B41A0 /* BDSegmentView.m */; };
 		9B56F7741ED2E8A700EB8586 /* SUN_TabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56F7731ED2E8A700EB8586 /* SUN_TabbarController.m */; };
 		9B56F7771ED2E8BC00EB8586 /* SUN_Tabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56F7761ED2E8BC00EB8586 /* SUN_Tabbar.m */; };
 		9B56F77A1ED2E90200EB8586 /* SUN_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56F7791ED2E90200EB8586 /* SUN_NavigationController.m */; };
@@ -97,6 +114,26 @@
 		9B38AEF01ED58082006B41A0 /* SUN_NearbyCollectionItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUN_NearbyCollectionItem.xib; sourceTree = "<group>"; };
 		9B38AEF31ED581DD006B41A0 /* SUN_NearListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_NearListModel.h; sourceTree = "<group>"; };
 		9B38AEF41ED581DD006B41A0 /* SUN_NearListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_NearListModel.m; sourceTree = "<group>"; };
+		9B38AEFD1ED6C5C1006B41A0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9B38AEFF1ED6C5C8006B41A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9B38AF011ED6C5CD006B41A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9B38AF031ED6C5D4006B41A0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9B38AF051ED6C5DC006B41A0 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		9B38AF071ED6C5E2006B41A0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9B38AF091ED6C5EC006B41A0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9B38AF0B1ED6C5F6006B41A0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9B38AF0D1ED6C5FA006B41A0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		9B38AF0F1ED6C601006B41A0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9B38AF111ED6C605006B41A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9B38AF131ED6C60D006B41A0 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		9B38AF151ED6C64A006B41A0 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		9B38AF171ED6C769006B41A0 /* SUNPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNPlayerViewController.h; sourceTree = "<group>"; };
+		9B38AF181ED6C769006B41A0 /* SUNPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNPlayerViewController.m; sourceTree = "<group>"; };
+		9B38AF1A1ED6D35E006B41A0 /* SUNPlayerChlidController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNPlayerChlidController.h; sourceTree = "<group>"; };
+		9B38AF1B1ED6D35E006B41A0 /* SUNPlayerChlidController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNPlayerChlidController.m; sourceTree = "<group>"; };
+		9B38AF1C1ED6D35E006B41A0 /* SUNPlayerChlidController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUNPlayerChlidController.xib; sourceTree = "<group>"; };
+		9B38AF1F1ED6D8E6006B41A0 /* BDSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSegmentView.h; sourceTree = "<group>"; };
+		9B38AF201ED6D8E6006B41A0 /* BDSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSegmentView.m; sourceTree = "<group>"; };
 		9B56F7701ED2DFD000EB8586 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9B56F7711ED2E06500EB8586 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		9B56F7721ED2E8A700EB8586 /* SUN_TabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_TabbarController.h; sourceTree = "<group>"; };
@@ -148,7 +185,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B38AF141ED6C60D006B41A0 /* VideoToolbox.framework in Frameworks */,
+				9B38AF121ED6C605006B41A0 /* UIKit.framework in Frameworks */,
+				9B38AF101ED6C601006B41A0 /* QuartzCore.framework in Frameworks */,
+				9B38AF0E1ED6C5FA006B41A0 /* OpenGLES.framework in Frameworks */,
+				9B38AF0C1ED6C5F6006B41A0 /* MobileCoreServices.framework in Frameworks */,
+				9B38AF0A1ED6C5EC006B41A0 /* MediaPlayer.framework in Frameworks */,
+				9B38AF081ED6C5E2006B41A0 /* libz.tbd in Frameworks */,
+				9B38AF061ED6C5DC006B41A0 /* libbz2.tbd in Frameworks */,
+				9B38AF041ED6C5D4006B41A0 /* CoreMedia.framework in Frameworks */,
+				9B38AF021ED6C5CD006B41A0 /* CoreGraphics.framework in Frameworks */,
+				9B38AF001ED6C5C8006B41A0 /* AVFoundation.framework in Frameworks */,
+				9B38AEFE1ED6C5C1006B41A0 /* AudioToolbox.framework in Frameworks */,
 				B8836EBB882D02FE6247B498 /* libPods-LikeFlyerLiveAPP.a in Frameworks */,
+				9B38AF161ED6C64A006B41A0 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +222,18 @@
 		5BDC07EEF86E6FAF41C40981 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B38AF131ED6C60D006B41A0 /* VideoToolbox.framework */,
+				9B38AF111ED6C605006B41A0 /* UIKit.framework */,
+				9B38AF0F1ED6C601006B41A0 /* QuartzCore.framework */,
+				9B38AF0D1ED6C5FA006B41A0 /* OpenGLES.framework */,
+				9B38AF0B1ED6C5F6006B41A0 /* MobileCoreServices.framework */,
+				9B38AF091ED6C5EC006B41A0 /* MediaPlayer.framework */,
+				9B38AF071ED6C5E2006B41A0 /* libz.tbd */,
+				9B38AF051ED6C5DC006B41A0 /* libbz2.tbd */,
+				9B38AF031ED6C5D4006B41A0 /* CoreMedia.framework */,
+				9B38AF011ED6C5CD006B41A0 /* CoreGraphics.framework */,
+				9B38AEFF1ED6C5C8006B41A0 /* AVFoundation.framework */,
+				9B38AEFD1ED6C5C1006B41A0 /* AudioToolbox.framework */,
 				C3867806EBB00C5B3F0A346E /* libPods-LikeFlyerLiveAPP.a */,
 			);
 			name = Frameworks;
@@ -270,6 +332,8 @@
 		9B7A26401ED2DA63009C397C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				9B38AF1F1ED6D8E6006B41A0 /* BDSegmentView.h */,
+				9B38AF201ED6D8E6006B41A0 /* BDSegmentView.m */,
 				9B7A26411ED2DA63009C397C /* Category */,
 				9B7A26421ED2DA63009C397C /* Tools */,
 			);
@@ -497,6 +561,11 @@
 				9B6B96E61ED3E94700C67830 /* SUN_MainViewController.xib */,
 				9B38AEEC1ED57F2E006B41A0 /* 热门 */,
 				9B38AEED1ED57F45006B41A0 /* 附近 */,
+				9B38AF171ED6C769006B41A0 /* SUNPlayerViewController.h */,
+				9B38AF181ED6C769006B41A0 /* SUNPlayerViewController.m */,
+				9B38AF1A1ED6D35E006B41A0 /* SUNPlayerChlidController.h */,
+				9B38AF1B1ED6D35E006B41A0 /* SUNPlayerChlidController.m */,
+				9B38AF1C1ED6D35E006B41A0 /* SUNPlayerChlidController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -539,6 +608,7 @@
 		9BA30FB41ED2C42D000A7B5C = {
 			isa = PBXGroup;
 			children = (
+				9B38AF151ED6C64A006B41A0 /* IJKMediaFramework.framework */,
 				9BA30FBF1ED2C42D000A7B5C /* LikeFlyerLiveAPP */,
 				9BA30FD91ED2C42D000A7B5C /* LikeFlyerLiveAPPTests */,
 				9BA30FE41ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests */,
@@ -730,6 +800,7 @@
 				9BA30FD01ED2C42D000A7B5C /* LaunchScreen.storyboard in Resources */,
 				9B38AE3D1ED554AC006B41A0 /* SUN_ShowListCell.xib in Resources */,
 				9B6B96F51ED407CC00C67830 /* SUN_AttentionController.xib in Resources */,
+				9B38AF1E1ED6D35E006B41A0 /* SUNPlayerChlidController.xib in Resources */,
 				9BA30FCD1ED2C42D000A7B5C /* Assets.xcassets in Resources */,
 				9B6B96FD1ED4080100C67830 /* SUN_PopularController.xib in Resources */,
 				9BA30FCB1ED2C42D000A7B5C /* Main.storyboard in Resources */,
@@ -811,6 +882,7 @@
 				9B38AEC81ED55881006B41A0 /* NSString+SUN.m in Sources */,
 				9B38AECA1ED55881006B41A0 /* UIColor+SUN.m in Sources */,
 				9B56F7771ED2E8BC00EB8586 /* SUN_Tabbar.m in Sources */,
+				9B38AF191ED6C769006B41A0 /* SUNPlayerViewController.m in Sources */,
 				9B38AEE51ED55B94006B41A0 /* SUNHTTPTool.m in Sources */,
 				9B56F7741ED2E8A700EB8586 /* SUN_TabbarController.m in Sources */,
 				9B7A26611ED2DAAA009C397C /* AppDelegate.m in Sources */,
@@ -822,9 +894,11 @@
 				9B38AE3C1ED554AC006B41A0 /* SUN_ShowListCell.m in Sources */,
 				9B6B96EC1ED3E96B00C67830 /* SUN_MineViewController.m in Sources */,
 				9B6B97011ED4082000C67830 /* SUN_NearbyController.m in Sources */,
+				9B38AF1D1ED6D35E006B41A0 /* SUNPlayerChlidController.m in Sources */,
 				9B6B96FC1ED4080100C67830 /* SUN_PopularController.m in Sources */,
 				9B38AEE81ED5691C006B41A0 /* ScrollListModel.m in Sources */,
 				9B38AECB1ED55881006B41A0 /* UIImage+SUN.m in Sources */,
+				9B38AF211ED6D8E6006B41A0 /* BDSegmentView.m in Sources */,
 				9BA30FC21ED2C42D000A7B5C /* main.m in Sources */,
 				9B38AE401ED55787006B41A0 /* SUN_ShowListModel.m in Sources */,
 				9B6B96E21ED3E63D00C67830 /* SUN_LanceController.m in Sources */,
@@ -985,6 +1059,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/AliPaySDK",
+					"$(PROJECT_DIR)/LikeFlyerLiveAPP",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LikeFlyerLiveAPP/PrefixHeader.pch";
 				INFOPLIST_FILE = LikeFlyerLiveAPP/Info.plist;
@@ -995,7 +1071,7 @@
 					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/AliPaySDK",
 					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/WeiXinSDK/WX",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunqishaung;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunqishaung.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1009,6 +1085,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/AliPaySDK",
+					"$(PROJECT_DIR)/LikeFlyerLiveAPP",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LikeFlyerLiveAPP/PrefixHeader.pch";
 				INFOPLIST_FILE = LikeFlyerLiveAPP/Info.plist;
@@ -1019,7 +1097,7 @@
 					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/AliPaySDK",
 					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/WeiXinSDK/WX",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunqishaung;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunqishaung.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

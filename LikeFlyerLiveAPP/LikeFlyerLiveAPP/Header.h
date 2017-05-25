@@ -18,11 +18,12 @@
 #import <YYKit/YYKit.h>
 #import <SDCycleScrollView/SDCycleScrollView.h>
 #import <MJExtension/MJExtension.h>
-
+#import <BlocksKit/BlocksKit+UIKit.h>
 
 
 #import "SUNTools.h"
 #import "SUNHTTPTool.h"
+#import "BDSegmentView.h"
 
 
 

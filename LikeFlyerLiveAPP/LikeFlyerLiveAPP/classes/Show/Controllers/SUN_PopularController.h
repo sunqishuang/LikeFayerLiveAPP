@@ -10,4 +10,6 @@
 
 @interface SUN_PopularController : SUN_ViewController
 
+@property (nonatomic, assign) CGRect viewFrame;
+
 @end

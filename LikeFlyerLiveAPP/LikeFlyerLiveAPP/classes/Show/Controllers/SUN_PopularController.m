@@ -13,6 +13,8 @@
 
 #import "SUN_WKWebViewController.h"
 
+#import "SUNPlayerViewController.h"
+
 @interface SUN_PopularController ()<SDCycleScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -30,6 +32,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+       self.view.frame = _viewFrame;
+    
     [self.view addSubview:self.tableView];
     
     
@@ -120,6 +124,10 @@
     SUN_ShowListModel *model = _dataArray[indexPath.row];
     
     
+    SUNPlayerViewController *vc = [[SUNPlayerViewController alloc] init];
+    
+    vc.liveModel = model;
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

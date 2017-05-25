@@ -10,4 +10,6 @@
 
 @interface SUN_AttentionController : SUN_ViewController
 
+@property (nonatomic, assign) CGRect viewFrame;
+
 @end

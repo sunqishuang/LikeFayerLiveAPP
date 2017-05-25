@@ -17,6 +17,10 @@
 
 @implementation SUN_NearbyCollectionItem
 
+
+
+
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
