@@ -77,14 +77,27 @@
     
 }
 
+
+
+
+
+
+//item将要出现的时候调用
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    SUN_NearbyCollectionItem *item = (SUN_NearbyCollectionItem *)cell;
+    
+ 
+    [item showAnimation];
+}
+
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-//- (void)collectionview
-
 
 - (void)getDataWithNetwork{
     

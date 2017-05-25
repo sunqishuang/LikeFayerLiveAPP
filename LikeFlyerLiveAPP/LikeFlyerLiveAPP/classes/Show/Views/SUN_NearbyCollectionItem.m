@@ -19,6 +19,22 @@
 
 
 
+- (void)showAnimation{
+    
+    if (self.model.animation) {
+        return;
+    }
+    
+    self.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1);
+    
+    [UIView animateWithDuration:0.5 animations:^{
+
+        self.model.animation = YES;
+        self.layer.transform = CATransform3DMakeScale(1, 1, 1);
+
+    }];
+    
+}
 
 
 - (void)awakeFromNib {

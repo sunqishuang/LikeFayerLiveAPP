@@ -18,4 +18,9 @@
 
 @property (nonatomic,strong) SUN_ShowListModel *info;
 
+/** <#name#> */
+@property (nonatomic, assign) BOOL animation;
+
+
+
 @end

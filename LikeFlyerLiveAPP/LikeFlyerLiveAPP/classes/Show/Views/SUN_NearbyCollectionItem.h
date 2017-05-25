@@ -14,4 +14,7 @@
 
 @property (nonatomic,strong) SUN_NearListModel *model;
 
+
+- (void)showAnimation;
+
 @end
