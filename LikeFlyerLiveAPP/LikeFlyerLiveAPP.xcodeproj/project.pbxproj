@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B38AE3C1ED554AC006B41A0 /* SUN_ShowListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AE3A1ED554AC006B41A0 /* SUN_ShowListCell.m */; };
+		9B38AE3D1ED554AC006B41A0 /* SUN_ShowListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B38AE3B1ED554AC006B41A0 /* SUN_ShowListCell.xib */; };
+		9B38AE401ED55787006B41A0 /* SUN_ShowListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AE3F1ED55787006B41A0 /* SUN_ShowListModel.m */; };
+		9B38AE431ED55804006B41A0 /* SUN_CreatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AE421ED55804006B41A0 /* SUN_CreatorModel.m */; };
+		9B38AEC81ED55881006B41A0 /* NSString+SUN.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AE471ED55880006B41A0 /* NSString+SUN.m */; };
+		9B38AEC91ED55881006B41A0 /* UIBarButtonItem+SUN.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AE491ED55880006B41A0 /* UIBarButtonItem+SUN.m */; };
+		9B38AECA1ED55881006B41A0 /* UIColor+SUN.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AE4B1ED55880006B41A0 /* UIColor+SUN.m */; };
+		9B38AECB1ED55881006B41A0 /* UIImage+SUN.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AE4D1ED55880006B41A0 /* UIImage+SUN.m */; };
+		9B38AEE11ED55881006B41A0 /* SUNTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AEC71ED55881006B41A0 /* SUNTools.m */; };
+		9B38AEE51ED55B94006B41A0 /* SUNHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AEE41ED55B94006B41A0 /* SUNHTTPTool.m */; };
+		9B38AEE81ED5691C006B41A0 /* ScrollListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AEE71ED5691C006B41A0 /* ScrollListModel.m */; };
+		9B38AEEB1ED56B83006B41A0 /* SUN_WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AEEA1ED56B83006B41A0 /* SUN_WKWebViewController.m */; };
+		9B38AEF11ED58082006B41A0 /* SUN_NearbyCollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AEEF1ED58082006B41A0 /* SUN_NearbyCollectionItem.m */; };
+		9B38AEF21ED58082006B41A0 /* SUN_NearbyCollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B38AEF01ED58082006B41A0 /* SUN_NearbyCollectionItem.xib */; };
+		9B38AEF51ED581DD006B41A0 /* SUN_NearListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AEF41ED581DD006B41A0 /* SUN_NearListModel.m */; };
 		9B56F7741ED2E8A700EB8586 /* SUN_TabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56F7731ED2E8A700EB8586 /* SUN_TabbarController.m */; };
 		9B56F7771ED2E8BC00EB8586 /* SUN_Tabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56F7761ED2E8BC00EB8586 /* SUN_Tabbar.m */; };
 		9B56F77A1ED2E90200EB8586 /* SUN_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56F7791ED2E90200EB8586 /* SUN_NavigationController.m */; };
@@ -53,6 +68,35 @@
 /* Begin PBXFileReference section */
 		3F0A3362CD31B5E098E2EEE0 /* Pods-LikeFlyerLiveAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikeFlyerLiveAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LikeFlyerLiveAPP/Pods-LikeFlyerLiveAPP.release.xcconfig"; sourceTree = "<group>"; };
 		6E661D4AB532C1A9B7433E45 /* Pods-LikeFlyerLiveAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikeFlyerLiveAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LikeFlyerLiveAPP/Pods-LikeFlyerLiveAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		9B38AE391ED554AC006B41A0 /* SUN_ShowListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_ShowListCell.h; sourceTree = "<group>"; };
+		9B38AE3A1ED554AC006B41A0 /* SUN_ShowListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_ShowListCell.m; sourceTree = "<group>"; };
+		9B38AE3B1ED554AC006B41A0 /* SUN_ShowListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUN_ShowListCell.xib; sourceTree = "<group>"; };
+		9B38AE3E1ED55787006B41A0 /* SUN_ShowListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_ShowListModel.h; sourceTree = "<group>"; };
+		9B38AE3F1ED55787006B41A0 /* SUN_ShowListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_ShowListModel.m; sourceTree = "<group>"; };
+		9B38AE411ED55804006B41A0 /* SUN_CreatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_CreatorModel.h; sourceTree = "<group>"; };
+		9B38AE421ED55804006B41A0 /* SUN_CreatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_CreatorModel.m; sourceTree = "<group>"; };
+		9B38AE461ED55880006B41A0 /* NSString+SUN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SUN.h"; sourceTree = "<group>"; };
+		9B38AE471ED55880006B41A0 /* NSString+SUN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SUN.m"; sourceTree = "<group>"; };
+		9B38AE481ED55880006B41A0 /* UIBarButtonItem+SUN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SUN.h"; sourceTree = "<group>"; };
+		9B38AE491ED55880006B41A0 /* UIBarButtonItem+SUN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SUN.m"; sourceTree = "<group>"; };
+		9B38AE4A1ED55880006B41A0 /* UIColor+SUN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SUN.h"; sourceTree = "<group>"; };
+		9B38AE4B1ED55880006B41A0 /* UIColor+SUN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SUN.m"; sourceTree = "<group>"; };
+		9B38AE4C1ED55880006B41A0 /* UIImage+SUN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SUN.h"; sourceTree = "<group>"; };
+		9B38AE4D1ED55880006B41A0 /* UIImage+SUN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SUN.m"; sourceTree = "<group>"; };
+		9B38AEC61ED55881006B41A0 /* SUNTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNTools.h; sourceTree = "<group>"; };
+		9B38AEC71ED55881006B41A0 /* SUNTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNTools.m; sourceTree = "<group>"; };
+		9B38AEE21ED55B27006B41A0 /* APIConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
+		9B38AEE31ED55B94006B41A0 /* SUNHTTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNHTTPTool.h; sourceTree = "<group>"; };
+		9B38AEE41ED55B94006B41A0 /* SUNHTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNHTTPTool.m; sourceTree = "<group>"; };
+		9B38AEE61ED5691C006B41A0 /* ScrollListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollListModel.h; sourceTree = "<group>"; };
+		9B38AEE71ED5691C006B41A0 /* ScrollListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollListModel.m; sourceTree = "<group>"; };
+		9B38AEE91ED56B83006B41A0 /* SUN_WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_WKWebViewController.h; sourceTree = "<group>"; };
+		9B38AEEA1ED56B83006B41A0 /* SUN_WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_WKWebViewController.m; sourceTree = "<group>"; };
+		9B38AEEE1ED58082006B41A0 /* SUN_NearbyCollectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_NearbyCollectionItem.h; sourceTree = "<group>"; };
+		9B38AEEF1ED58082006B41A0 /* SUN_NearbyCollectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_NearbyCollectionItem.m; sourceTree = "<group>"; };
+		9B38AEF01ED58082006B41A0 /* SUN_NearbyCollectionItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUN_NearbyCollectionItem.xib; sourceTree = "<group>"; };
+		9B38AEF31ED581DD006B41A0 /* SUN_NearListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_NearListModel.h; sourceTree = "<group>"; };
+		9B38AEF41ED581DD006B41A0 /* SUN_NearListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_NearListModel.m; sourceTree = "<group>"; };
 		9B56F7701ED2DFD000EB8586 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9B56F7711ED2E06500EB8586 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		9B56F7721ED2E8A700EB8586 /* SUN_TabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_TabbarController.h; sourceTree = "<group>"; };
@@ -133,6 +177,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9B38AE441ED55880006B41A0 /* SunTools */ = {
+			isa = PBXGroup;
+			children = (
+				9B38AE451ED55880006B41A0 /* category */,
+				9B38AEC61ED55881006B41A0 /* SUNTools.h */,
+				9B38AEC71ED55881006B41A0 /* SUNTools.m */,
+			);
+			path = SunTools;
+			sourceTree = "<group>";
+		};
+		9B38AE451ED55880006B41A0 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				9B38AE461ED55880006B41A0 /* NSString+SUN.h */,
+				9B38AE471ED55880006B41A0 /* NSString+SUN.m */,
+				9B38AE481ED55880006B41A0 /* UIBarButtonItem+SUN.h */,
+				9B38AE491ED55880006B41A0 /* UIBarButtonItem+SUN.m */,
+				9B38AE4A1ED55880006B41A0 /* UIColor+SUN.h */,
+				9B38AE4B1ED55880006B41A0 /* UIColor+SUN.m */,
+				9B38AE4C1ED55880006B41A0 /* UIImage+SUN.h */,
+				9B38AE4D1ED55880006B41A0 /* UIImage+SUN.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		9B38AEEC1ED57F2E006B41A0 /* 热门 */ = {
+			isa = PBXGroup;
+			children = (
+				9B6B96F11ED407CC00C67830 /* SUN_AttentionController.h */,
+				9B6B96F21ED407CC00C67830 /* SUN_AttentionController.m */,
+				9B6B96F31ED407CC00C67830 /* SUN_AttentionController.xib */,
+				9B6B96F91ED4080100C67830 /* SUN_PopularController.h */,
+				9B6B96FA1ED4080100C67830 /* SUN_PopularController.m */,
+				9B6B96FB1ED4080100C67830 /* SUN_PopularController.xib */,
+				9B38AEE91ED56B83006B41A0 /* SUN_WKWebViewController.h */,
+				9B38AEEA1ED56B83006B41A0 /* SUN_WKWebViewController.m */,
+			);
+			name = "热门";
+			sourceTree = "<group>";
+		};
+		9B38AEED1ED57F45006B41A0 /* 附近 */ = {
+			isa = PBXGroup;
+			children = (
+				9B6B96FE1ED4082000C67830 /* SUN_NearbyController.h */,
+				9B6B96FF1ED4082000C67830 /* SUN_NearbyController.m */,
+				9B6B97001ED4082000C67830 /* SUN_NearbyController.xib */,
+			);
+			name = "附近";
+			sourceTree = "<group>";
+		};
 		9B7A263D1ED2DA63009C397C /* APPDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +286,7 @@
 		9B7A26421ED2DA63009C397C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				9B38AE441ED55880006B41A0 /* SunTools */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -330,6 +425,9 @@
 		9B7A26531ED2DA63009C397C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9B38AEE21ED55B27006B41A0 /* APIConfig.h */,
+				9B38AEE31ED55B94006B41A0 /* SUNHTTPTool.h */,
+				9B38AEE41ED55B94006B41A0 /* SUNHTTPTool.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -383,8 +481,8 @@
 		9B7A265A1ED2DA63009C397C /* Show */ = {
 			isa = PBXGroup;
 			children = (
-				9B7A265B1ED2DA63009C397C /* Controllers */,
 				9B7A265C1ED2DA63009C397C /* Handler */,
+				9B7A265B1ED2DA63009C397C /* Controllers */,
 				9B7A265D1ED2DA63009C397C /* Models */,
 				9B7A265E1ED2DA63009C397C /* Views */,
 			);
@@ -397,15 +495,8 @@
 				9B6B96E41ED3E94700C67830 /* SUN_MainViewController.h */,
 				9B6B96E51ED3E94700C67830 /* SUN_MainViewController.m */,
 				9B6B96E61ED3E94700C67830 /* SUN_MainViewController.xib */,
-				9B6B96F11ED407CC00C67830 /* SUN_AttentionController.h */,
-				9B6B96F21ED407CC00C67830 /* SUN_AttentionController.m */,
-				9B6B96F31ED407CC00C67830 /* SUN_AttentionController.xib */,
-				9B6B96F91ED4080100C67830 /* SUN_PopularController.h */,
-				9B6B96FA1ED4080100C67830 /* SUN_PopularController.m */,
-				9B6B96FB1ED4080100C67830 /* SUN_PopularController.xib */,
-				9B6B96FE1ED4082000C67830 /* SUN_NearbyController.h */,
-				9B6B96FF1ED4082000C67830 /* SUN_NearbyController.m */,
-				9B6B97001ED4082000C67830 /* SUN_NearbyController.xib */,
+				9B38AEEC1ED57F2E006B41A0 /* 热门 */,
+				9B38AEED1ED57F45006B41A0 /* 附近 */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -420,6 +511,14 @@
 		9B7A265D1ED2DA63009C397C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9B38AE3E1ED55787006B41A0 /* SUN_ShowListModel.h */,
+				9B38AE3F1ED55787006B41A0 /* SUN_ShowListModel.m */,
+				9B38AE411ED55804006B41A0 /* SUN_CreatorModel.h */,
+				9B38AE421ED55804006B41A0 /* SUN_CreatorModel.m */,
+				9B38AEE61ED5691C006B41A0 /* ScrollListModel.h */,
+				9B38AEE71ED5691C006B41A0 /* ScrollListModel.m */,
+				9B38AEF31ED581DD006B41A0 /* SUN_NearListModel.h */,
+				9B38AEF41ED581DD006B41A0 /* SUN_NearListModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -427,6 +526,12 @@
 		9B7A265E1ED2DA63009C397C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9B38AE391ED554AC006B41A0 /* SUN_ShowListCell.h */,
+				9B38AE3A1ED554AC006B41A0 /* SUN_ShowListCell.m */,
+				9B38AE3B1ED554AC006B41A0 /* SUN_ShowListCell.xib */,
+				9B38AEEE1ED58082006B41A0 /* SUN_NearbyCollectionItem.h */,
+				9B38AEEF1ED58082006B41A0 /* SUN_NearbyCollectionItem.m */,
+				9B38AEF01ED58082006B41A0 /* SUN_NearbyCollectionItem.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -618,10 +723,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B6B96ED1ED3E96B00C67830 /* SUN_MineViewController.xib in Resources */,
+				9B38AEF21ED58082006B41A0 /* SUN_NearbyCollectionItem.xib in Resources */,
 				9B6B97021ED4082000C67830 /* SUN_NearbyController.xib in Resources */,
 				9B6B96E81ED3E94700C67830 /* SUN_MainViewController.xib in Resources */,
 				9B6B96E31ED3E63D00C67830 /* SUN_LanceController.xib in Resources */,
 				9BA30FD01ED2C42D000A7B5C /* LaunchScreen.storyboard in Resources */,
+				9B38AE3D1ED554AC006B41A0 /* SUN_ShowListCell.xib in Resources */,
 				9B6B96F51ED407CC00C67830 /* SUN_AttentionController.xib in Resources */,
 				9BA30FCD1ED2C42D000A7B5C /* Assets.xcassets in Resources */,
 				9B6B96FD1ED4080100C67830 /* SUN_PopularController.xib in Resources */,
@@ -698,17 +805,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B38AEC91ED55881006B41A0 /* UIBarButtonItem+SUN.m in Sources */,
 				9B56F77A1ED2E90200EB8586 /* SUN_NavigationController.m in Sources */,
+				9B38AE431ED55804006B41A0 /* SUN_CreatorModel.m in Sources */,
+				9B38AEC81ED55881006B41A0 /* NSString+SUN.m in Sources */,
+				9B38AECA1ED55881006B41A0 /* UIColor+SUN.m in Sources */,
 				9B56F7771ED2E8BC00EB8586 /* SUN_Tabbar.m in Sources */,
+				9B38AEE51ED55B94006B41A0 /* SUNHTTPTool.m in Sources */,
 				9B56F7741ED2E8A700EB8586 /* SUN_TabbarController.m in Sources */,
 				9B7A26611ED2DAAA009C397C /* AppDelegate.m in Sources */,
 				9B6B96E71ED3E94700C67830 /* SUN_MainViewController.m in Sources */,
+				9B38AEF51ED581DD006B41A0 /* SUN_NearListModel.m in Sources */,
+				9B38AEEB1ED56B83006B41A0 /* SUN_WKWebViewController.m in Sources */,
 				9B6B96F41ED407CC00C67830 /* SUN_AttentionController.m in Sources */,
+				9B38AEE11ED55881006B41A0 /* SUNTools.m in Sources */,
+				9B38AE3C1ED554AC006B41A0 /* SUN_ShowListCell.m in Sources */,
 				9B6B96EC1ED3E96B00C67830 /* SUN_MineViewController.m in Sources */,
 				9B6B97011ED4082000C67830 /* SUN_NearbyController.m in Sources */,
 				9B6B96FC1ED4080100C67830 /* SUN_PopularController.m in Sources */,
+				9B38AEE81ED5691C006B41A0 /* ScrollListModel.m in Sources */,
+				9B38AECB1ED55881006B41A0 /* UIImage+SUN.m in Sources */,
 				9BA30FC21ED2C42D000A7B5C /* main.m in Sources */,
+				9B38AE401ED55787006B41A0 /* SUN_ShowListModel.m in Sources */,
 				9B6B96E21ED3E63D00C67830 /* SUN_LanceController.m in Sources */,
+				9B38AEF11ED58082006B41A0 /* SUN_NearbyCollectionItem.m in Sources */,
 				9B56F77D1ED2E91700EB8586 /* SUN_ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -862,10 +982,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V2WV6W2CC3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/AliPaySDK",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LikeFlyerLiveAPP/PrefixHeader.pch";
 				INFOPLIST_FILE = LikeFlyerLiveAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/AliPaySDK",
+					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/WeiXinSDK/WX",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunqishaung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -877,10 +1006,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V2WV6W2CC3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/AliPaySDK",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LikeFlyerLiveAPP/PrefixHeader.pch";
 				INFOPLIST_FILE = LikeFlyerLiveAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/AliPaySDK",
+					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/WeiXinSDK/WX",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunqishaung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

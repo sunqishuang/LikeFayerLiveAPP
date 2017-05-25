@@ -37,6 +37,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    
+    if (self.viewControllers.count > 0) {
+        viewController.hidesBottomBarWhenPushed = YES;
+//        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+//        negativeSpacer.width = -5;
+//        
+//        //设置导航栏的按钮
+//        //        UIBarButtonItem *backButton = [UIBarButtonItem itemWithImageName:@"navigationbar_back_image" highImageName:@"navigationbar_back_image" target:self action:@selector(back)];
+//        //        viewController.navigationItem.leftBarButtonItems = @[negativeSpacer, backButton];
+//        
+//        // 就有滑动返回功能
+//        self.interactivePopGestureRecognizer.delegate = nil;
+    }
+    [super pushViewController:viewController animated:animated];
+    
+}
+
+
 /*
 #pragma mark - Navigation
 

@@ -28,6 +28,8 @@
     [self configViewControllers];
 
     
+   
+    
     //加载Tabbar
     [self.tabBar addSubview:self.sun_tabbar];
     

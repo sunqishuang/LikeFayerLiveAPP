@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9446E927109DF16FB81B6A5BB0B05F17'
+               BlueprintIdentifier = 'E354516E28162A6DAF9F10D8B27C21DE'
                BlueprintName = 'VTMagic'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libVTMagic.a'>

@@ -8,7 +8,13 @@
 
 #import "SUN_NearbyController.h"
 
-@interface SUN_NearbyController ()
+#import "SUN_NearbyCollectionItem.h"
+
+@interface SUN_NearbyController ()<UICollectionViewDataSource,UICollectionViewDelegate>
+
+@property (nonatomic, strong) UICollectionView *collectionView;
+
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
 
@@ -16,7 +22,51 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    [self.view addSubview:self.collectionView];
+
+    [self getDataWithNetwork];
+
+
+}
+
+- (UICollectionView *)collectionView{
+    if (!_collectionView) {
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        CGFloat width = (K_Width - 20)/3.0;
+        layout.itemSize = CGSizeMake(width, width  + 24);
+        layout.sectionInset = UIEdgeInsetsMake(10, 5, 5, 5);
+        layout.minimumLineSpacing = 5;
+        layout.minimumInteritemSpacing = 5;
+        
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, K_Width, K_Height - 64 - 49) collectionViewLayout:layout];
+        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        [_collectionView registerNib:[UINib nibWithNibName:@"SUN_NearbyCollectionItem" bundle:nil] forCellWithReuseIdentifier:@"SUN_NearbyCollectionItem"];
+        
+    }
+    
+    return _collectionView;
+}
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return _dataArray.count;
+}
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    SUN_NearbyCollectionItem *item = [collectionView dequeueReusableCellWithReuseIdentifier:@"SUN_NearbyCollectionItem" forIndexPath:indexPath];
+    
+    
+    item.model = _dataArray[indexPath.row];
+    return item;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +74,32 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)getDataWithNetwork{
+    
+    //这里的uid写死,不想写映客的注册登录系统了.
+    [SUNHTTPTool getWithPath:@"api/live/near_flow_old" params:@{@"uid":@"286033960"} success:^(id json) {
+        NSString *dm_error  = [NSString stringWithFormat:@"%@",json[@"dm_error"]];
+        if ([dm_error isEqualToString:@"0"]) {
+            NSArray *flow = json[@"flow"];
+            if ([SUNTools SetValueIsNotNull:flow]) {
+                _dataArray = [SUN_NearListModel mj_objectArrayWithKeyValuesArray:flow];
+            }
+        }else{
+            NSString *error_msg  =  [NSString stringWithFormat:@"%@",json[@"error_msg"]];
+            
+            NSLog(@"error_msg ==== %@",error_msg);
+        }
+        [_collectionView reloadData];
+
+    } failure:^(NSError *error) {
+        
+    }];
+    
 }
-*/
+
+
+
+
 
 @end

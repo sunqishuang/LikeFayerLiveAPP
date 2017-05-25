@@ -8,7 +8,8 @@ pod ‘SDWebImage’
 pod ‘Masonry’
 pod ‘YYKit’
 pod 'VTMagic'
-
+pod 'SDCycleScrollView'
+pod 'MJExtension'
 
 
 

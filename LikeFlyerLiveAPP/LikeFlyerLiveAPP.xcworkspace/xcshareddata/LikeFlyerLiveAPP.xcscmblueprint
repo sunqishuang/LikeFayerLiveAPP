@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FC729E102039B5B83D2CA9A8A38B04B7753D51B2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4EE0B3631F252407BC30D28B6941F3306909EE2F" : 9223372036854775807,
+    "FC729E102039B5B83D2CA9A8A38B04B7753D51B2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9B59EA10-5C0A-4FD6-8E65-D618B911FF3D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4EE0B3631F252407BC30D28B6941F3306909EE2F" : "LikeFayerLiveAPP\/LikeFlyerLiveAPP\/LikeFlyerLiveAPP\/classes\/Helper\/Tools\/SunTools\/",
+    "FC729E102039B5B83D2CA9A8A38B04B7753D51B2" : "LikeFayerLiveAPP\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LikeFlyerLiveAPP",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LikeFlyerLiveAPP\/LikeFlyerLiveAPP.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sunqishuang\/SunTools.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4EE0B3631F252407BC30D28B6941F3306909EE2F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sunqishuang\/LikeFayerLiveAPP.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FC729E102039B5B83D2CA9A8A38B04B7753D51B2"
+    }
+  ]
+}

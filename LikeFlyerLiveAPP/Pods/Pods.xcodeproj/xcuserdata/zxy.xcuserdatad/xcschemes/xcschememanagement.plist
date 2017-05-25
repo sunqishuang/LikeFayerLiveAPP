@@ -9,12 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-LikeFlyerLiveAPP.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDCycleScrollView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,22 +47,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>228DBE1294C70F94AC6E7ECF9E6F6043</key>
+		<key>43AF4B232950FEADD7C6847CD5B376E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>73C349E4B057A56B131D44A87C40898B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9446E927109DF16FB81B6A5BB0B05F17</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9C5458ABD45F5579DF14378E9BF3616E</key>
+		<key>46429F43F9C2B0F52B9CAB1C7F2D602A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -63,6 +63,26 @@
 			<true/>
 		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E354516E28162A6DAF9F10D8B27C21DE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F380A4CAAF989707E7189C61E3684E2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F441A46D1FB8DADCBFC078F855586ABC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
