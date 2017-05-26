@@ -62,6 +62,9 @@
 		9BA30FD01ED2C42D000A7B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA30FCE1ED2C42D000A7B5C /* LaunchScreen.storyboard */; };
 		9BA30FDB1ED2C42D000A7B5C /* LikeFlyerLiveAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA30FDA1ED2C42D000A7B5C /* LikeFlyerLiveAPPTests.m */; };
 		9BA30FE61ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA30FE51ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests.m */; };
+		9BD0BE3F1ED7C3F000553F62 /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0BE3E1ED7C3F000553F62 /* LFLivePreview.m */; };
+		9BD0BE421ED7C40A00553F62 /* SUN_LiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0BE411ED7C40A00553F62 /* SUN_LiveController.m */; };
+		9BD0BE461ED80E5200553F62 /* SUNAudienceCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0BE451ED80E5200553F62 /* SUNAudienceCollectionViewItem.m */; };
 		B8836EBB882D02FE6247B498 /* libPods-LikeFlyerLiveAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3867806EBB00C5B3F0A346E /* libPods-LikeFlyerLiveAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -177,6 +180,12 @@
 		9BA30FE11ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LikeFlyerLiveAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA30FE51ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LikeFlyerLiveAPPUITests.m; sourceTree = "<group>"; };
 		9BA30FE71ED2C42D000A7B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BD0BE3D1ED7C3F000553F62 /* LFLivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivePreview.h; sourceTree = "<group>"; };
+		9BD0BE3E1ED7C3F000553F62 /* LFLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivePreview.m; sourceTree = "<group>"; };
+		9BD0BE401ED7C40A00553F62 /* SUN_LiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_LiveController.h; sourceTree = "<group>"; };
+		9BD0BE411ED7C40A00553F62 /* SUN_LiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_LiveController.m; sourceTree = "<group>"; };
+		9BD0BE441ED80E5200553F62 /* SUNAudienceCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNAudienceCollectionViewItem.h; sourceTree = "<group>"; };
+		9BD0BE451ED80E5200553F62 /* SUNAudienceCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNAudienceCollectionViewItem.m; sourceTree = "<group>"; };
 		C3867806EBB00C5B3F0A346E /* libPods-LikeFlyerLiveAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LikeFlyerLiveAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -267,9 +276,6 @@
 		9B38AEEC1ED57F2E006B41A0 /* 热门 */ = {
 			isa = PBXGroup;
 			children = (
-				9B6B96F11ED407CC00C67830 /* SUN_AttentionController.h */,
-				9B6B96F21ED407CC00C67830 /* SUN_AttentionController.m */,
-				9B6B96F31ED407CC00C67830 /* SUN_AttentionController.xib */,
 				9B6B96F91ED4080100C67830 /* SUN_PopularController.h */,
 				9B6B96FA1ED4080100C67830 /* SUN_PopularController.m */,
 				9B6B96FB1ED4080100C67830 /* SUN_PopularController.xib */,
@@ -301,8 +307,8 @@
 		9B7A263E1ED2DA63009C397C /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				9B7A263F1ED2DA63009C397C /* Base */,
 				9B7A26401ED2DA63009C397C /* Helper */,
+				9B7A263F1ED2DA63009C397C /* Base */,
 				9B7A26431ED2DA63009C397C /* Libs */,
 				9B7A26441ED2DA63009C397C /* Live */,
 				9B7A26491ED2DA63009C397C /* Me */,
@@ -379,6 +385,8 @@
 				9B6B96DF1ED3E63D00C67830 /* SUN_LanceController.h */,
 				9B6B96E01ED3E63D00C67830 /* SUN_LanceController.m */,
 				9B6B96E11ED3E63D00C67830 /* SUN_LanceController.xib */,
+				9BD0BE401ED7C40A00553F62 /* SUN_LiveController.h */,
+				9BD0BE411ED7C40A00553F62 /* SUN_LiveController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -400,6 +408,8 @@
 		9B7A26481ED2DA63009C397C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9BD0BE3D1ED7C3F000553F62 /* LFLivePreview.h */,
+				9BD0BE3E1ED7C3F000553F62 /* LFLivePreview.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -559,6 +569,7 @@
 				9B6B96E41ED3E94700C67830 /* SUN_MainViewController.h */,
 				9B6B96E51ED3E94700C67830 /* SUN_MainViewController.m */,
 				9B6B96E61ED3E94700C67830 /* SUN_MainViewController.xib */,
+				9BD0BE431ED7CBC700553F62 /* 关注 */,
 				9B38AEEC1ED57F2E006B41A0 /* 热门 */,
 				9B38AEED1ED57F45006B41A0 /* 附近 */,
 				9B38AF171ED6C769006B41A0 /* SUNPlayerViewController.h */,
@@ -601,6 +612,8 @@
 				9B38AEEE1ED58082006B41A0 /* SUN_NearbyCollectionItem.h */,
 				9B38AEEF1ED58082006B41A0 /* SUN_NearbyCollectionItem.m */,
 				9B38AEF01ED58082006B41A0 /* SUN_NearbyCollectionItem.xib */,
+				9BD0BE441ED80E5200553F62 /* SUNAudienceCollectionViewItem.h */,
+				9BD0BE451ED80E5200553F62 /* SUNAudienceCollectionViewItem.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -669,6 +682,16 @@
 				9BA30FE71ED2C42D000A7B5C /* Info.plist */,
 			);
 			path = LikeFlyerLiveAPPUITests;
+			sourceTree = "<group>";
+		};
+		9BD0BE431ED7CBC700553F62 /* 关注 */ = {
+			isa = PBXGroup;
+			children = (
+				9B6B96F11ED407CC00C67830 /* SUN_AttentionController.h */,
+				9B6B96F21ED407CC00C67830 /* SUN_AttentionController.m */,
+				9B6B96F31ED407CC00C67830 /* SUN_AttentionController.xib */,
+			);
+			name = "关注";
 			sourceTree = "<group>";
 		};
 		ACE99B614F51CC6F4B59CFB3 /* Pods */ = {
@@ -750,7 +773,7 @@
 				TargetAttributes = {
 					9BA30FBC1ED2C42D000A7B5C = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = V2WV6W2CC3;
+						DevelopmentTeam = K7WVLRWRCP;
 						ProvisioningStyle = Automatic;
 					};
 					9BA30FD51ED2C42D000A7B5C = {
@@ -876,8 +899,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD0BE461ED80E5200553F62 /* SUNAudienceCollectionViewItem.m in Sources */,
 				9B38AEC91ED55881006B41A0 /* UIBarButtonItem+SUN.m in Sources */,
 				9B56F77A1ED2E90200EB8586 /* SUN_NavigationController.m in Sources */,
+				9BD0BE421ED7C40A00553F62 /* SUN_LiveController.m in Sources */,
 				9B38AE431ED55804006B41A0 /* SUN_CreatorModel.m in Sources */,
 				9B38AEC81ED55881006B41A0 /* NSString+SUN.m in Sources */,
 				9B38AECA1ED55881006B41A0 /* UIColor+SUN.m in Sources */,
@@ -899,6 +924,7 @@
 				9B38AEE81ED5691C006B41A0 /* ScrollListModel.m in Sources */,
 				9B38AECB1ED55881006B41A0 /* UIImage+SUN.m in Sources */,
 				9B38AF211ED6D8E6006B41A0 /* BDSegmentView.m in Sources */,
+				9BD0BE3F1ED7C3F000553F62 /* LFLivePreview.m in Sources */,
 				9BA30FC21ED2C42D000A7B5C /* main.m in Sources */,
 				9B38AE401ED55787006B41A0 /* SUN_ShowListModel.m in Sources */,
 				9B6B96E21ED3E63D00C67830 /* SUN_LanceController.m in Sources */,
@@ -1055,7 +1081,8 @@
 			baseConfigurationReference = 6E661D4AB532C1A9B7433E45 /* Pods-LikeFlyerLiveAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V2WV6W2CC3;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K7WVLRWRCP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/AliPaySDK",
@@ -1071,8 +1098,9 @@
 					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/AliPaySDK",
 					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/WeiXinSDK/WX",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunqishaung.;
+				PRODUCT_BUNDLE_IDENTIFIER = com.love.help;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1081,7 +1109,8 @@
 			baseConfigurationReference = 3F0A3362CD31B5E098E2EEE0 /* Pods-LikeFlyerLiveAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V2WV6W2CC3;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K7WVLRWRCP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/AliPaySDK",
@@ -1097,8 +1126,9 @@
 					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/AliPaySDK",
 					"$(PROJECT_DIR)/LikeFlyerLiveAPP/classes/Helper/Tools/SunTools/LMPay/WeiXinSDK/WX",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunqishaung.;
+				PRODUCT_BUNDLE_IDENTIFIER = com.love.help;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

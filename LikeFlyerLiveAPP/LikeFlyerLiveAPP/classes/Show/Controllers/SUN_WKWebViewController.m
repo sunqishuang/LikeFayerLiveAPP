@@ -30,7 +30,7 @@
     // 在iOS上默认为NO，表示不能自动通过窗口打开
     config.preferences.javaScriptCanOpenWindowsAutomatically = NO;
 
-    WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, K_Width, K_Height - 64) configuration:config];
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, K_Width, K_Height ) configuration:config];
     
     [self.view addSubview:webView];
     

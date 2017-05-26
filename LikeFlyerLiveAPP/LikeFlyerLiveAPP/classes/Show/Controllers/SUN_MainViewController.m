@@ -29,6 +29,17 @@
 
 @implementation SUN_MainViewController
 
+
+
++ (void)load
+{
+    [NSObject mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
+        return @{
+                 @"ID" : @"id",@"Description":@"description"
+                 };
+    }];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

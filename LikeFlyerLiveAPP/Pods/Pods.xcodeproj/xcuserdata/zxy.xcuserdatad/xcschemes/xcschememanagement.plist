@@ -14,7 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LFLiveKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,32 +62,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>04CF549EBEEE7BC87AEAE35397184D94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0AC55E754182E1FCF070AC7F74379523</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>66B727D5CE7CD5BA17AD7DDC345BF426</key>
+		<key>195950B278772EAC5C5F51700BC64289</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6F7A2C2401E2C5D7FA63C1646086358A</key>
+		<key>24D55B093D4D25E348B6408D4B02BDB9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70D7DDC063BED1927D284CDD3709A8E7</key>
+		<key>502B6E87C897530D3427B3CFC801CDB7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7BB4B8C780FE58301771C4EC696FC3C9</key>
+		<key>590C3DF5C996F70DB99976D901F09A0B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C273F500A23E9FCDE2DC7B08A998AE5</key>
+		<key>75E28DF37072FD7B765EAA7D43D0B487</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79F707FD6E3FF2A0D7FA7867A5B4BBB2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

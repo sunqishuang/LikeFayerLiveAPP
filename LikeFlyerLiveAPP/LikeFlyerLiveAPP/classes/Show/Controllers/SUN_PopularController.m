@@ -83,6 +83,12 @@
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.tableHeaderView = self.headerScrollView;
         [_tableView registerNib:[UINib nibWithNibName:@"SUN_ShowListCell" bundle:nil] forCellReuseIdentifier:@"SUN_ShowListCell"];
+        SUNWEAKSELF
+        _tableView.mj_header = [MJRefreshStateHeader headerWithRefreshingBlock:^{
+            
+            [weakSelf getDataWithNetwork];
+        }];
+
         
     }
     return _tableView;
@@ -152,6 +158,7 @@
             
             NSLog(@"error_msg ==== %@",error_msg);
         }
+         [SUNTools tableViewEndrRefresh:_tableView];
         [_tableView reloadData];
     } failure:^(NSError *error) {
         

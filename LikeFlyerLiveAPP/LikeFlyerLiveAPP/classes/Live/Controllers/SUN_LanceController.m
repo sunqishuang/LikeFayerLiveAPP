@@ -8,7 +8,10 @@
 
 #import "SUN_LanceController.h"
 
+#import "SUN_LiveController.h"
+
 @interface SUN_LanceController ()
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
 
 @end
 
@@ -16,7 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+
+    _startButton.layer.cornerRadius = 15;
+    _startButton.layer.borderWidth = 1;
+    _startButton.layer.borderColor = [UIColor whiteColor].CGColor;
+
 }
 
 
@@ -25,6 +33,19 @@
     
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
+
+
+
+/**
+ 开始直播
+ */
+- (IBAction)StartLiveClick:(id)sender {
+    
+    
+    [self.navigationController pushViewController:[SUN_LiveController new] animated:YES];
+    
+}
+
 
 
 

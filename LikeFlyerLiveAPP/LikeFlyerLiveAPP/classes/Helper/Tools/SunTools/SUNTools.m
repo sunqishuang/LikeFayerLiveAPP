@@ -325,10 +325,10 @@
 
 
 
-//+ (void)tableViewEndrRefresh:(UITableView *)tableView{
-//    [tableView.mj_header endRefreshing];
-//    [tableView.mj_footer endRefreshing];
-//}
++ (void)tableViewEndrRefresh:(UITableView *)tableView{
+    [tableView.mj_header endRefreshing];
+    [tableView.mj_footer endRefreshing];
+}
 //
 //+ (void)BD_NoMoreDataTableView:(nonnull UITableView *)tableView  DataSource:(nonnull NSArray *)dataSource pageNum:(NSInteger )pageNum{
 //    

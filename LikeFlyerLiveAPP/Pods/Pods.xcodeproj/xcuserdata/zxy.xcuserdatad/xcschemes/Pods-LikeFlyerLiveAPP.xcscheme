@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '70D7DDC063BED1927D284CDD3709A8E7'
+               BlueprintIdentifier = '79F707FD6E3FF2A0D7FA7867A5B4BBB2'
                BlueprintName = 'Pods-LikeFlyerLiveAPP'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-LikeFlyerLiveAPP.a'>

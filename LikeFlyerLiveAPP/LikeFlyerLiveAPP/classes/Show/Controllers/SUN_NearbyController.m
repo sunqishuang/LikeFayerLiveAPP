@@ -48,7 +48,13 @@
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         [_collectionView registerNib:[UINib nibWithNibName:@"SUN_NearbyCollectionItem" bundle:nil] forCellWithReuseIdentifier:@"SUN_NearbyCollectionItem"];
-        
+     
+        SUNWEAKSELF
+        _collectionView.mj_header = [MJRefreshStateHeader headerWithRefreshingBlock:^{
+            
+            [weakSelf getDataWithNetwork];
+        }];
+
     }
     
     return _collectionView;
@@ -114,6 +120,7 @@
             
             NSLog(@"error_msg ==== %@",error_msg);
         }
+         [SUNTools tableViewEndrRefresh:_collectionView];
         [_collectionView reloadData];
 
     } failure:^(NSError *error) {

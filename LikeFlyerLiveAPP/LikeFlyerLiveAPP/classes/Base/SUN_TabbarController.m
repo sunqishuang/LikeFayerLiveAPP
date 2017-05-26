@@ -69,7 +69,10 @@
                 {
                     SUN_LanceController *lanceVC = [[SUN_LanceController alloc] init];
                     
-                    [weakSelf presentViewController:lanceVC animated:YES completion:NULL];
+                    SUN_NavigationController *nav = [[SUN_NavigationController alloc]initWithRootViewController:lanceVC];
+                    nav.navigationBarHidden = YES;
+                    
+                    [weakSelf presentViewController:nav animated:YES completion:NULL];
                 }
                     break;
                     

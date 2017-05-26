@@ -8,6 +8,12 @@
 
 #import "SUN_ViewController.h"
 
+#import "SUN_ShowListModel.h"
+
+
 @interface SUNPlayerChlidController : SUN_ViewController
+
+
+@property (nonatomic,strong) SUN_ShowListModel *liveModel;
 
 @end

@@ -11,8 +11,6 @@ pod 'VTMagic'
 pod 'SDCycleScrollView'
 pod 'MJExtension'
 pod 'BlocksKit'
-
-
-
-
+pod 'LFLiveKit'
+pod 'MJRefresh'
 end

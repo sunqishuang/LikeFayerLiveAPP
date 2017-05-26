@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SUN_LanceController">
             <connections>
+                <outlet property="startButton" destination="cbR-qb-vtY" id="Rug-e3-Ahe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,6 +30,18 @@
                         <action selector="closeButtonClick:" destination="-1" eventType="touchUpInside" id="6AZ-29-Rpd"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbR-qb-vtY">
+                    <rect key="frame" x="147" y="318.5" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1hK-pr-kvT"/>
+                        <constraint firstAttribute="width" constant="80" id="Ie4-ib-a9f"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="开始直播"/>
+                    <connections>
+                        <action selector="StartLiveClick:" destination="-1" eventType="touchUpInside" id="c7E-qI-LAS"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -38,7 +51,10 @@
                 <constraint firstItem="yh6-Sc-8wB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TWN-A4-naX"/>
                 <constraint firstAttribute="bottom" secondItem="yh6-Sc-8wB" secondAttribute="bottom" id="UVM-OH-Zoz"/>
                 <constraint firstAttribute="trailing" secondItem="jEN-c6-Yf7" secondAttribute="trailing" id="mlC-Iy-s53"/>
+                <constraint firstItem="cbR-qb-vtY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pu5-U5-Pom"/>
+                <constraint firstItem="cbR-qb-vtY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sdn-qZ-7Yp"/>
             </constraints>
+            <point key="canvasLocation" x="33.5" y="119.5"/>
         </view>
     </objects>
     <resources>

@@ -44,6 +44,7 @@
 
 - (void)setModel:(SUN_NearListModel *)model{
     _model = model;
+    
     [_mainImageView sd_setImageWithURL:[NSURL URLWithString:model.info.creator.portrait] placeholderImage:DefaultImage];
     
     _levelLabel.text = [NSString stringWithFormat:@"lv%@",model.info.creator.level];

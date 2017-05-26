@@ -6,11 +6,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SUNPlayerChlidController">
             <connections>
+                <outlet property="audienceCollectionView" destination="Jac-qd-vUK" id="eSe-lo-aFv"/>
+                <outlet property="iconImageView" destination="ZgO-W7-c37" id="2J8-Xi-Ybf"/>
+                <outlet property="online_usersLabel" destination="8tW-WG-i4w" id="QEM-f7-FR3"/>
+                <outlet property="shareButton" destination="Nf7-GS-eiP" id="kuU-6Y-yGj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -68,11 +73,56 @@
                         <constraint firstItem="NAt-aR-fgm" firstAttribute="leading" secondItem="lxj-41-LoN" secondAttribute="trailing" constant="10" id="yQv-dB-V2d"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6Z-Qb-kEO">
+                    <rect key="frame" x="10" y="30" width="87" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="YFE-Y4-4xE"/>
+                        <constraint firstAttribute="width" constant="87" id="hlB-Eg-hh5"/>
+                    </constraints>
+                    <state key="normal" image="mg_room_touxiang"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZgO-W7-c37">
+                    <rect key="frame" x="10" y="30" width="33" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ZgO-W7-c37" secondAttribute="height" multiplier="1:1" constant="1" id="NoQ-Uz-5TA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="234562" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tW-WG-i4w">
+                    <rect key="frame" x="48" y="48" width="40" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="UnM-GS-XGe"/>
+                        <constraint firstAttribute="height" constant="12" id="eMc-Ht-Kyb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Jac-qd-vUK">
+                    <rect key="frame" x="107" y="30" width="268" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XcG-14-Wfc">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="MaD-A4-b3K" secondAttribute="bottom" id="8lf-1P-bZV"/>
+                <constraint firstItem="ZgO-W7-c37" firstAttribute="bottom" secondItem="n6Z-Qb-kEO" secondAttribute="bottom" id="8mb-0U-vdx"/>
+                <constraint firstAttribute="trailing" secondItem="Jac-qd-vUK" secondAttribute="trailing" id="HfY-GP-4st"/>
+                <constraint firstItem="Jac-qd-vUK" firstAttribute="bottom" secondItem="n6Z-Qb-kEO" secondAttribute="bottom" id="HwW-wu-ntK"/>
+                <constraint firstItem="ZgO-W7-c37" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="IcB-jB-BGW"/>
+                <constraint firstItem="8tW-WG-i4w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="48" id="LWA-gs-hqA"/>
+                <constraint firstItem="8tW-WG-i4w" firstAttribute="leading" secondItem="ZgO-W7-c37" secondAttribute="trailing" constant="5" id="RmS-NH-ayw"/>
                 <constraint firstItem="MaD-A4-b3K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ygs-LX-6Dy"/>
+                <constraint firstItem="n6Z-Qb-kEO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="azh-5q-els"/>
+                <constraint firstItem="Jac-qd-vUK" firstAttribute="top" secondItem="n6Z-Qb-kEO" secondAttribute="top" id="b7v-Po-2FD"/>
+                <constraint firstItem="Jac-qd-vUK" firstAttribute="leading" secondItem="n6Z-Qb-kEO" secondAttribute="trailing" constant="10" id="oye-iO-5WV"/>
+                <constraint firstItem="n6Z-Qb-kEO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="qWJ-bf-yGk"/>
+                <constraint firstItem="ZgO-W7-c37" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="qx4-Mh-gQd"/>
                 <constraint firstAttribute="trailing" secondItem="MaD-A4-b3K" secondAttribute="trailing" id="yUU-Yp-R6h"/>
             </constraints>
             <point key="canvasLocation" x="-53.5" y="-213.5"/>
@@ -83,5 +133,6 @@
         <image name="mg_room_btn_liao_h" width="40" height="40"/>
         <image name="mg_room_btn_liwu_h" width="40" height="40"/>
         <image name="mg_room_btn_xinxi_h" width="40" height="40"/>
+        <image name="mg_room_touxiang" width="87" height="32"/>
     </resources>
 </document>

@@ -92,6 +92,7 @@
 - (SUNPlayerChlidController *)chlidVC{
     if (!_chlidVC) {
         _chlidVC = [[SUNPlayerChlidController alloc] init];
+        _chlidVC.liveModel = _liveModel;
     }
     
     return _chlidVC;
