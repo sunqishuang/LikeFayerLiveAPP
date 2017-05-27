@@ -40,7 +40,7 @@
     
     
 
-        [self getDataWithNetwork];
+    [self getDataWithNetwork];
     [self getScrollListDataWithNetwork];
         
 

@@ -8,10 +8,14 @@
 
 #import "SUN_LanceController.h"
 
-#import "SUN_LiveController.h"
+
+
+#import "LFLivePreview.h"
 
 @interface SUN_LanceController ()
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
+
+@property (nonatomic, strong) LFLivePreview *liveView;
 
 @end
 
@@ -31,7 +35,13 @@
 
 - (IBAction)closeButtonClick:(id)sender {
     
+    
+
+    
+    
     [self dismissViewControllerAnimated:YES completion:NULL];
+    
+    
 }
 
 
@@ -41,8 +51,16 @@
  */
 - (IBAction)StartLiveClick:(id)sender {
     
+ 
     
-    [self.navigationController pushViewController:[SUN_LiveController new] animated:YES];
+    UIView *blackView = [[UIView alloc] initWithFrame:self.view.bounds];
+    blackView.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:blackView];
+    _liveView = [[LFLivePreview alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:_liveView];
+    
+    [_liveView startLive];
+
     
 }
 

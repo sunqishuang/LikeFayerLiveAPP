@@ -63,7 +63,6 @@
 		9BA30FDB1ED2C42D000A7B5C /* LikeFlyerLiveAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA30FDA1ED2C42D000A7B5C /* LikeFlyerLiveAPPTests.m */; };
 		9BA30FE61ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA30FE51ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests.m */; };
 		9BD0BE3F1ED7C3F000553F62 /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0BE3E1ED7C3F000553F62 /* LFLivePreview.m */; };
-		9BD0BE421ED7C40A00553F62 /* SUN_LiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0BE411ED7C40A00553F62 /* SUN_LiveController.m */; };
 		9BD0BE461ED80E5200553F62 /* SUNAudienceCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0BE451ED80E5200553F62 /* SUNAudienceCollectionViewItem.m */; };
 		B8836EBB882D02FE6247B498 /* libPods-LikeFlyerLiveAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3867806EBB00C5B3F0A346E /* libPods-LikeFlyerLiveAPP.a */; };
 /* End PBXBuildFile section */
@@ -182,8 +181,6 @@
 		9BA30FE71ED2C42D000A7B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BD0BE3D1ED7C3F000553F62 /* LFLivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivePreview.h; sourceTree = "<group>"; };
 		9BD0BE3E1ED7C3F000553F62 /* LFLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivePreview.m; sourceTree = "<group>"; };
-		9BD0BE401ED7C40A00553F62 /* SUN_LiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_LiveController.h; sourceTree = "<group>"; };
-		9BD0BE411ED7C40A00553F62 /* SUN_LiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_LiveController.m; sourceTree = "<group>"; };
 		9BD0BE441ED80E5200553F62 /* SUNAudienceCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNAudienceCollectionViewItem.h; sourceTree = "<group>"; };
 		9BD0BE451ED80E5200553F62 /* SUNAudienceCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNAudienceCollectionViewItem.m; sourceTree = "<group>"; };
 		C3867806EBB00C5B3F0A346E /* libPods-LikeFlyerLiveAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LikeFlyerLiveAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -385,8 +382,6 @@
 				9B6B96DF1ED3E63D00C67830 /* SUN_LanceController.h */,
 				9B6B96E01ED3E63D00C67830 /* SUN_LanceController.m */,
 				9B6B96E11ED3E63D00C67830 /* SUN_LanceController.xib */,
-				9BD0BE401ED7C40A00553F62 /* SUN_LiveController.h */,
-				9BD0BE411ED7C40A00553F62 /* SUN_LiveController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -902,7 +897,6 @@
 				9BD0BE461ED80E5200553F62 /* SUNAudienceCollectionViewItem.m in Sources */,
 				9B38AEC91ED55881006B41A0 /* UIBarButtonItem+SUN.m in Sources */,
 				9B56F77A1ED2E90200EB8586 /* SUN_NavigationController.m in Sources */,
-				9BD0BE421ED7C40A00553F62 /* SUN_LiveController.m in Sources */,
 				9B38AE431ED55804006B41A0 /* SUN_CreatorModel.m in Sources */,
 				9B38AEC81ED55881006B41A0 /* NSString+SUN.m in Sources */,
 				9B38AECA1ED55881006B41A0 /* UIColor+SUN.m in Sources */,

@@ -8,13 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^CloseButtonClick)(void);
+
 
 @interface LFLivePreview : UIView
 
-/** <#note#> */
-@property (nonatomic,copy) CloseButtonClick closeBlock;
+
+/**
+ 开始直播
+ */
+- (void)startLive;
 
 
+
+/**
+ 结束直播
+ */
+- (void)stopLive;
 
 @end
