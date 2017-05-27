@@ -1,13 +1,13 @@
 //
-//  SUN_MineViewController.h
-//  LikeFlyerLiveAPP
+//  SXTMeViewController.h
+//  尚学堂映客
 //
-//  Created by zxy on 2017/5/23.
-//  Copyright © 2017年 SunQishuang. All rights reserved.
+//  Created by 大欢 on 16/8/16.
+//  Copyright © 2016年 大欢. All rights reserved.
 //
 
 #import "SUN_ViewController.h"
 
-@interface SUN_MineViewController : SUN_ViewController
+@interface SUN_MineViewController : UITableViewController
 
 @end

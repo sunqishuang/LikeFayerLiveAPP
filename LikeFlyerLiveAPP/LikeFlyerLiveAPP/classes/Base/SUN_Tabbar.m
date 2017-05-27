@@ -8,7 +8,7 @@
 
 #import "SUN_Tabbar.h"
 
-@interface SUN_Tabbar ()
+@interface SUN_Tabbar ()<UITabBarDelegate>
 
 @property (nonatomic, strong) NSArray  *dataList;
 
@@ -28,6 +28,7 @@
     
     if (self) {
         [self configUI];
+//        self.delegate = self;
         
     }
     
@@ -36,46 +37,30 @@
 
 
 - (void)configUI{
-    [self addSubview:self.tabbarBackgroundView];
+//    [self addSubview:self.tabbarBackgroundView];
     
-    for (int i = 0 ; i < self.dataList.count ; i++) {
-        UIButton *item = [UIButton buttonWithType:UIButtonTypeCustom];
-        item.adjustsImageWhenHighlighted = NO;
-        [item setImage:[UIImage imageNamed:self.dataList[i]] forState:UIControlStateNormal];
-        [item setImage:[UIImage imageNamed:[self.dataList[i] stringByAppendingString:@"_p"]] forState:UIControlStateSelected];
-        item.tag = i;
-        [item addTarget:self action:@selector(itemClick:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:item];
-        
-        if (i == 0) {
-            item.selected = YES;
-            _lastItem = item;
-        }
-    }
-    
+//    for (int i = 0 ; i < self.dataList.count ; i++) {
+//        UIButton *item = [UIButton buttonWithType:UIButtonTypeCustom];
+//        item.adjustsImageWhenHighlighted = NO;
+//        [item setImage:[UIImage imageNamed:self.dataList[i]] forState:UIControlStateNormal];
+//        [item setImage:[UIImage imageNamed:[self.dataList[i] stringByAppendingString:@"_p"]] forState:UIControlStateSelected];
+//        item.tag = i;
+//        [item addTarget:self action:@selector(itemClick:) forControlEvents:UIControlEventTouchUpInside];
+//        [self addSubview:item];
+//        
+//        if (i == 0) {
+//            item.selected = YES;
+//            _lastItem = item;
+//        }
+//    }
     
     [self addSubview:self.carmaButton];
+    
 }
 
 
 #pragma mark ---------------------------------------------- get
 
-- (UIImageView *)tabbarBackgroundView{
-    if (!_tabbarBackgroundView) {
-        _tabbarBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"global_tab_bg"]];
-//        _tabbarBackgroundView.frame = self.bounds;
-    }
-    
-    return _tabbarBackgroundView;
-}
-
-- (NSArray *)dataList{
-    if (!_dataList) {
-        _dataList = @[@"tab_live",@"tab_me"];
-    }
-    
-    return _dataList;
-}
 
 - (UIButton *)carmaButton{
     if (!_carmaButton) {
@@ -93,28 +78,13 @@
 
 #pragma mark ---------------------------------------------- buttonClick
 - (void)itemClick:(UIButton *)button{
-   
-    
-    if (button.tag < 2) {
-        _lastItem.selected = NO;
-        button.selected = YES;;
-        _lastItem = button;
-        
-        //动画设置
-        [UIView animateWithDuration:0.2 animations:^{
-            button.transform = CGAffineTransformMakeScale(1.3, 1.3);
-            
-        } completion:^(BOOL finished) {
-            // 弹簧动画，参数分别为：时长，延时，弹性（越小弹性越大），初始速度
-            [UIView animateWithDuration:0.2 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:5 options:0 animations:^{
-                button.transform = CGAffineTransformIdentity;
-            } completion:nil];
-        }];
-    }
+
  
     if (_didSelectedBlock) {
         _didSelectedBlock(button.tag);
     }
+    
+    
     
 }
 
@@ -125,22 +95,27 @@
     
     [super layoutSubviews];
     
-    self.tabbarBackgroundView.frame = self.bounds;
-    
-    CGFloat width = self.bounds.size.width / 2.0;
-    
-    for (UIView *view in self.subviews) {
-        if (view.tag == 0) {
-            view.frame = CGRectMake(0, 0, width, 49);
-        }else if (view.tag == 1){
-            view.frame = CGRectMake(width, 0, width, 49);
-        }else{
-            self.carmaButton.center = CGPointMake(K_Width/2.0 , 5);
-        }
-    }
+    self.carmaButton.center = CGPointMake(K_Width/2.0 , 5);
+
     
     
 }
+
+// 在自定义UITabBar中重写以下方法，其中self.button就是那个希望被触发点击事件的按钮
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    UIView *view = [super hitTest:point withEvent:event];
+    if (view == nil) {
+        // 转换坐标系
+        CGPoint newPoint = [self.carmaButton convertPoint:point fromView:self];
+        // 判断触摸点是否在button上
+        if (CGRectContainsPoint(self.carmaButton.bounds, newPoint)) {
+            view = self.carmaButton;
+        }
+    }
+    return view;
+}
+
+
 
 
 @end

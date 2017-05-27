@@ -13,9 +13,11 @@
 typedef void(^SUNTabbarDisSelectedBlock)(NSInteger index);
 
 
-@interface SUN_Tabbar : UIView
+@interface SUN_Tabbar : UITabBar
 
 
 @property (nonatomic, copy) SUNTabbarDisSelectedBlock didSelectedBlock;
+
+
 
 @end

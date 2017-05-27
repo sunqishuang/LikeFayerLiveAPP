@@ -47,8 +47,6 @@
 		9B6B96E31ED3E63D00C67830 /* SUN_LanceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6B96E11ED3E63D00C67830 /* SUN_LanceController.xib */; };
 		9B6B96E71ED3E94700C67830 /* SUN_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B96E51ED3E94700C67830 /* SUN_MainViewController.m */; };
 		9B6B96E81ED3E94700C67830 /* SUN_MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6B96E61ED3E94700C67830 /* SUN_MainViewController.xib */; };
-		9B6B96EC1ED3E96B00C67830 /* SUN_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B96EA1ED3E96B00C67830 /* SUN_MineViewController.m */; };
-		9B6B96ED1ED3E96B00C67830 /* SUN_MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6B96EB1ED3E96B00C67830 /* SUN_MineViewController.xib */; };
 		9B6B96F41ED407CC00C67830 /* SUN_AttentionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B96F21ED407CC00C67830 /* SUN_AttentionController.m */; };
 		9B6B96F51ED407CC00C67830 /* SUN_AttentionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6B96F31ED407CC00C67830 /* SUN_AttentionController.xib */; };
 		9B6B96FC1ED4080100C67830 /* SUN_PopularController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B96FA1ED4080100C67830 /* SUN_PopularController.m */; };
@@ -64,6 +62,11 @@
 		9BA30FE61ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA30FE51ED2C42D000A7B5C /* LikeFlyerLiveAPPUITests.m */; };
 		9BD0BE3F1ED7C3F000553F62 /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0BE3E1ED7C3F000553F62 /* LFLivePreview.m */; };
 		9BD0BE461ED80E5200553F62 /* SUNAudienceCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0BE451ED80E5200553F62 /* SUNAudienceCollectionViewItem.m */; };
+		9BD0BE581ED9736800553F62 /* SUN_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0BE561ED9736800553F62 /* SUN_MineViewController.m */; };
+		9BD0BE591ED9736800553F62 /* SUN_MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0BE571ED9736800553F62 /* SUN_MineViewController.xib */; };
+		9BD0BE5D1ED9738600553F62 /* SXTMeInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0BE5B1ED9738600553F62 /* SXTMeInfoView.m */; };
+		9BD0BE5E1ED9738600553F62 /* SXTMeInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0BE5C1ED9738600553F62 /* SXTMeInfoView.xib */; };
+		9BD0BE611ED9739800553F62 /* SXTSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0BE601ED9739800553F62 /* SXTSetting.m */; };
 		B8836EBB882D02FE6247B498 /* libPods-LikeFlyerLiveAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3867806EBB00C5B3F0A346E /* libPods-LikeFlyerLiveAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -153,9 +156,6 @@
 		9B6B96E41ED3E94700C67830 /* SUN_MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_MainViewController.h; sourceTree = "<group>"; };
 		9B6B96E51ED3E94700C67830 /* SUN_MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_MainViewController.m; sourceTree = "<group>"; };
 		9B6B96E61ED3E94700C67830 /* SUN_MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUN_MainViewController.xib; sourceTree = "<group>"; };
-		9B6B96E91ED3E96B00C67830 /* SUN_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_MineViewController.h; sourceTree = "<group>"; };
-		9B6B96EA1ED3E96B00C67830 /* SUN_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_MineViewController.m; sourceTree = "<group>"; };
-		9B6B96EB1ED3E96B00C67830 /* SUN_MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUN_MineViewController.xib; sourceTree = "<group>"; };
 		9B6B96F11ED407CC00C67830 /* SUN_AttentionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_AttentionController.h; sourceTree = "<group>"; };
 		9B6B96F21ED407CC00C67830 /* SUN_AttentionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_AttentionController.m; sourceTree = "<group>"; };
 		9B6B96F31ED407CC00C67830 /* SUN_AttentionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUN_AttentionController.xib; sourceTree = "<group>"; };
@@ -183,6 +183,14 @@
 		9BD0BE3E1ED7C3F000553F62 /* LFLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivePreview.m; sourceTree = "<group>"; };
 		9BD0BE441ED80E5200553F62 /* SUNAudienceCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNAudienceCollectionViewItem.h; sourceTree = "<group>"; };
 		9BD0BE451ED80E5200553F62 /* SUNAudienceCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNAudienceCollectionViewItem.m; sourceTree = "<group>"; };
+		9BD0BE551ED9736800553F62 /* SUN_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUN_MineViewController.h; sourceTree = "<group>"; };
+		9BD0BE561ED9736800553F62 /* SUN_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUN_MineViewController.m; sourceTree = "<group>"; };
+		9BD0BE571ED9736800553F62 /* SUN_MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUN_MineViewController.xib; sourceTree = "<group>"; };
+		9BD0BE5A1ED9738600553F62 /* SXTMeInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTMeInfoView.h; sourceTree = "<group>"; };
+		9BD0BE5B1ED9738600553F62 /* SXTMeInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTMeInfoView.m; sourceTree = "<group>"; };
+		9BD0BE5C1ED9738600553F62 /* SXTMeInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SXTMeInfoView.xib; sourceTree = "<group>"; };
+		9BD0BE5F1ED9739800553F62 /* SXTSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTSetting.h; sourceTree = "<group>"; };
+		9BD0BE601ED9739800553F62 /* SXTSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTSetting.m; sourceTree = "<group>"; };
 		C3867806EBB00C5B3F0A346E /* libPods-LikeFlyerLiveAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LikeFlyerLiveAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -424,9 +432,9 @@
 		9B7A264A1ED2DA63009C397C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9B6B96E91ED3E96B00C67830 /* SUN_MineViewController.h */,
-				9B6B96EA1ED3E96B00C67830 /* SUN_MineViewController.m */,
-				9B6B96EB1ED3E96B00C67830 /* SUN_MineViewController.xib */,
+				9BD0BE551ED9736800553F62 /* SUN_MineViewController.h */,
+				9BD0BE561ED9736800553F62 /* SUN_MineViewController.m */,
+				9BD0BE571ED9736800553F62 /* SUN_MineViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -441,6 +449,8 @@
 		9B7A264C1ED2DA63009C397C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9BD0BE5F1ED9739800553F62 /* SXTSetting.h */,
+				9BD0BE601ED9739800553F62 /* SXTSetting.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -487,6 +497,9 @@
 		9B7A26521ED2DA63009C397C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9BD0BE5A1ED9738600553F62 /* SXTMeInfoView.h */,
+				9BD0BE5B1ED9738600553F62 /* SXTMeInfoView.m */,
+				9BD0BE5C1ED9738600553F62 /* SXTMeInfoView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -810,13 +823,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B6B96ED1ED3E96B00C67830 /* SUN_MineViewController.xib in Resources */,
 				9B38AEF21ED58082006B41A0 /* SUN_NearbyCollectionItem.xib in Resources */,
 				9B6B97021ED4082000C67830 /* SUN_NearbyController.xib in Resources */,
+				9BD0BE591ED9736800553F62 /* SUN_MineViewController.xib in Resources */,
 				9B6B96E81ED3E94700C67830 /* SUN_MainViewController.xib in Resources */,
 				9B6B96E31ED3E63D00C67830 /* SUN_LanceController.xib in Resources */,
 				9BA30FD01ED2C42D000A7B5C /* LaunchScreen.storyboard in Resources */,
 				9B38AE3D1ED554AC006B41A0 /* SUN_ShowListCell.xib in Resources */,
+				9BD0BE5E1ED9738600553F62 /* SXTMeInfoView.xib in Resources */,
 				9B6B96F51ED407CC00C67830 /* SUN_AttentionController.xib in Resources */,
 				9B38AF1E1ED6D35E006B41A0 /* SUNPlayerChlidController.xib in Resources */,
 				9BA30FCD1ED2C42D000A7B5C /* Assets.xcassets in Resources */,
@@ -895,7 +909,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BD0BE461ED80E5200553F62 /* SUNAudienceCollectionViewItem.m in Sources */,
+				9BD0BE611ED9739800553F62 /* SXTSetting.m in Sources */,
 				9B38AEC91ED55881006B41A0 /* UIBarButtonItem+SUN.m in Sources */,
+				9BD0BE5D1ED9738600553F62 /* SXTMeInfoView.m in Sources */,
 				9B56F77A1ED2E90200EB8586 /* SUN_NavigationController.m in Sources */,
 				9B38AE431ED55804006B41A0 /* SUN_CreatorModel.m in Sources */,
 				9B38AEC81ED55881006B41A0 /* NSString+SUN.m in Sources */,
@@ -905,13 +921,13 @@
 				9B38AEE51ED55B94006B41A0 /* SUNHTTPTool.m in Sources */,
 				9B56F7741ED2E8A700EB8586 /* SUN_TabbarController.m in Sources */,
 				9B7A26611ED2DAAA009C397C /* AppDelegate.m in Sources */,
+				9BD0BE581ED9736800553F62 /* SUN_MineViewController.m in Sources */,
 				9B6B96E71ED3E94700C67830 /* SUN_MainViewController.m in Sources */,
 				9B38AEF51ED581DD006B41A0 /* SUN_NearListModel.m in Sources */,
 				9B38AEEB1ED56B83006B41A0 /* SUN_WKWebViewController.m in Sources */,
 				9B6B96F41ED407CC00C67830 /* SUN_AttentionController.m in Sources */,
 				9B38AEE11ED55881006B41A0 /* SUNTools.m in Sources */,
 				9B38AE3C1ED554AC006B41A0 /* SUN_ShowListCell.m in Sources */,
-				9B6B96EC1ED3E96B00C67830 /* SUN_MineViewController.m in Sources */,
 				9B6B97011ED4082000C67830 /* SUN_NearbyController.m in Sources */,
 				9B38AF1D1ED6D35E006B41A0 /* SUNPlayerChlidController.m in Sources */,
 				9B6B96FC1ED4080100C67830 /* SUN_PopularController.m in Sources */,

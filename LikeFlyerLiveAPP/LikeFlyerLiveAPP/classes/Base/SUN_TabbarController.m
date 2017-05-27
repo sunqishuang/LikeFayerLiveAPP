@@ -13,7 +13,9 @@
 #import "SUN_NavigationController.h"
 #import "SUN_LanceController.h"
 
-@interface SUN_TabbarController ()
+
+
+@interface SUN_TabbarController ()<UITabBarControllerDelegate>
 
 
 @end
@@ -31,13 +33,11 @@
    
     
     //加载Tabbar
-    [self.tabBar addSubview:self.sun_tabbar];
+
+    [self setValue:self.sun_tabbar forKey:@"tabBar"];
     
-    //去掉自身tabbar的上部横线
 
-    [[UITabBar appearance] setShadowImage:[UIImage new]];
-    [[UITabBar appearance] setBackgroundImage:[UIImage new]];
-
+    self.delegate = self;
 
 }
 
@@ -88,21 +88,48 @@
 #pragma mark ---------------------------------------------- config
 
 - (void)configViewControllers{
-    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"SUN_MainViewController",@"SUN_MineViewController", nil];
+ 
     
-    for (int i = 0 ; i < array.count; i ++) {
-        NSString *VCName = array[i];
-        
-        UIViewController *vc = [[NSClassFromString(VCName) alloc] init];
-        
-        SUN_NavigationController *sun_nav = [[SUN_NavigationController alloc] initWithRootViewController:vc];
-        
-       
-        [array replaceObjectAtIndex:i withObject:sun_nav];
-    }
     
-    self.viewControllers = array;
+    SUN_MainViewController *mainVC = [SUN_MainViewController new];
+    mainVC.tabBarItem.tag = 0;
+    SUN_MineViewController *mineVC = [SUN_MineViewController new];
+    mineVC.tabBarItem.tag = 1;
+    
+    [self cretaeChildViewController:mainVC title:nil Image:[UIImage imageNamed:@"tab_live"] selectedImage:[UIImage imageNamed:@"tab_live_p"]];
+    
+    [self cretaeChildViewController:mineVC title:nil Image:[UIImage imageNamed:@"tab_me"] selectedImage:[UIImage imageNamed:@"tab_me_p"]];
 }
+
+
+
+
+- (void)cretaeChildViewController:(UIViewController *)childVc title:(NSString *)title Image:(UIImage *)image  selectedImage:(UIImage *)selectedImage{
+    
+    
+    childVc.title = title;
+    //    childVc.title
+    childVc.tabBarItem.image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    childVc.tabBarItem.selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [childVc.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+ 
+ 
+    
+
+    
+    
+   SUN_NavigationController *BDNavigation = [[SUN_NavigationController alloc]initWithRootViewController:childVc];
+    
+
+    
+    [self addChildViewController:BDNavigation];
+    
+
+    
+    
+}
+
+
 
 
 
@@ -113,8 +140,53 @@
 }
 
 
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    
+    
+    [self animationWithIndex:self.selectedIndex];
+    
+}
 
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    
+    
+   
+    
+    
+}
 
+- (void)animationWithIndex:(NSInteger) index {
+    
+    NSMutableArray *tabbarbuttonArray = [NSMutableArray array];
+    for (UIView *tabBarButton in self.sun_tabbar.subviews){
+        
+        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]){
+            
+            [tabbarbuttonArray addObject:tabBarButton];
+            
+        }
+        
+    }
+    
+    
+    UIView *tabbarButton = tabbarbuttonArray[index];
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        
+        
+        tabbarButton.transform = CGAffineTransformMakeScale(1.3, 1.3);
+        
+    } completion:^(BOOL finished) {
+        // 弹簧动画，参数分别为：时长，延时，弹性（越小弹性越大），初始速度
+        [UIView animateWithDuration:0.2 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:5 options:0 animations:^{
+            tabbarButton.transform = CGAffineTransformIdentity;
+        } completion:nil];
+    }];
+    
+    
+    
+    
+}
 
 
 
